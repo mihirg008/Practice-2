@@ -37,8 +37,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen(process.env.PORT || 3003, () => {
- console.log(“server started at port 3003”);
-});
-
 module.exports = app;
