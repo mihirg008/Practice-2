@@ -20,24 +20,30 @@ link(href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-the
 script(src='js/script.js', type='text/javascript').
 //- Custom styles for this template
 link(href='css/main.css', rel='stylesheet')
+link(href='css/au.css', rel='stylesheet')
+link(href='css/initiatives.css', rel='stylesheet')    
 body#page-top
 //- Navigation
 nav#mainNav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top(style='padding-top: 0px;padding-bottom: 0px;')
   .container-fluid
     span.navbar-brand.navbar-left
       a.js-scroll-trigger.order-md-first.order-0(href='#page-top')
-        img(src='img/logo.png', alt='', style='width:13em')
+        img(src='img/logo.png', alt='', style='width:12em')
     button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
       | Menu
       i.fas.fa-bars
     #navbarResponsive.collapse.navbar-collapse
       ul.navbar-nav.text-uppercase.ml-auto
         li.nav-item
-          a.nav-link.js-scroll-trigger(href='#') HOME
+          a.nav-link.js-scroll-trigger(href='/') HOME
         li.nav-item
-          a.nav-link.js-scroll-trigger(href='#about-uss') ABOUT US
-        li.nav-item
-          a.nav-link.js-scroll-trigger(href='#services') INITIATIVES
+          a.nav-link.js-scroll-trigger(href='/#{atag}') ABOUT US
+        li.nav-item.dropdown
+          a#navbarDropdown.nav-link(href='#Services', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') INITIATIVES
+          .dropdown-menu.bg-dark.border-0(aria-labelledby='navbarDropdown')
+            a.dropdown-item.x(href='/jvm') JVM
+            a.dropdown-item.x(href='/prayas') Prayas
+            a.dropdown-item.x(href='/udyat') Udyat 
         li.nav-item.dropdown
           a#navbarDropdown.nav-link(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') FINANCIALS
           .dropdown-menu.bg-dark.border-0(aria-labelledby='navbarDropdown')
@@ -47,16 +53,36 @@ nav#mainNav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top(style='padding
         li.nav-item
           a.nav-link.js-scroll-trigger(href='#team') MEMBERS
         li.nav-item
+          a.nav-link.js-scroll-trigger(href='') MEDIA
+        li.nav-item
           a.nav-link.js-scroll-trigger(href='#') DONATE
         li.nav-item
-          a.nav-link.js-scroll-trigger(href='#contact') CONTACT US
-header.masthead(style='background-image:url("../img/#{top_image}")')
-  .container
-    .intro-text
-      .intro-lead-in Welcome To Our Website!
-      .intro-heading.text-uppercase It's Nice To Meet You
-      a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services') Tell Me More  
+          a.nav-link.js-scroll-trigger(href='#contact') CONTACT US 
  block content
+
+//- Footer
+footer
+ .container
+   .row
+     .col-md-4
+       span.copyright Copyright © GYWS Web Team 2019
+     .col-md-4
+       ul.list-inline.social-buttons
+         li.list-inline-item
+           a(href='#')
+             i.fab.fa-twitter
+         li.list-inline-item
+           a(href='#')
+             i.fab.fa-facebook-f
+         li.list-inline-item
+           a(href='#')
+             i.fab.fa-linkedin-in
+     .col-md-4
+       ul.list-inline.quicklinks
+         li.list-inline-item
+           a(href='#') Privacy Policy
+         li.list-inline-item
+           a(href='#') Terms of Use   
 
 //- Bootstrap core JavaScript
 script(src='vendor/jquery/jquery.min.js')

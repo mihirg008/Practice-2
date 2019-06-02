@@ -1,0 +1,283 @@
+/*
+  jvm pages css starts
+*/
+body div.shortintro h2{
+  text-align: center;
+  font-size: 75%;
+  margin-top: -2%;
+  margin-bottom: 2.5%;
+}
+.xbox {
+  height: auto;
+  margin-left: 5%;
+  text-align: center;
+}
+.xrow {
+  margin-top: 2.5%;
+}
+.jvm_intro h5 {
+  margin-bottom: 3%;
+}
+.jvm_intro p {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.xbox i {
+  font-size: 250%;
+  border-radius: 100%;
+  border: 1px solid blue;
+  padding: 3%;
+  color: purple;
+  background: #f1f1f1;
+}
+.xbox i:hover {
+  color: #f1f1f1;
+  background: purple;
+}
+.yrow {
+  margin-top: 5%;
+}
+.ybox h5 {
+  margin-left: 15%;
+}
+.ybox h6 {
+  padding-bottom: 5%;
+}
+.ybox {
+  text-align: center;
+  height: auto;
+}
+.xbox img {
+  width: 100%;
+}
+.xbox h5 {
+  margin-top: 3%;
+}
+.col-md-5 {
+  margin-left: 5%;
+}
+.ybox i {
+  font-size: 500%;
+  border-radius: 100%;
+  border: 1px solid blue;
+  padding: 5%;
+  color: purple;
+  background: #f1f1f1;
+  margin-top: 5%;
+  margin-bottom: 1.5%;
+  margin-left: 10%;
+}
+.ybox i:hover {
+  color: #f1f1f1;
+  background: purple;
+}
+@media screen and (max-width: 992px) {
+  body div.shortintro {
+    margin-top: 6.5em;
+  }
+  body div.layout .yrow p {
+    font-size: 100%;
+    margin-top: 1%;
+  }
+  body div.layout .ybox {
+    margin-bottom: 2.5%;
+  }
+  #div_h4_t {
+    margin-right: 2%;
+  }
+  #div_h4_c {
+    margin-left: 2%;
+  }
+  body div.layout .yrow i {
+    font-size: 300%;
+  }
+  body div.layout .yrow h3 {
+    font-size: 150%;
+  }
+  #qoutes {
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+}
+@media screen and (max-width: 662px) {
+  body div.layout .yrow p {
+    font-size: 75%;
+    margin-top: 0%;
+  }
+  body div.layout .dbox {
+    margin-bottom: 0.5%;
+  }
+  #div_h4_t {
+    margin-right: 0%;
+  }
+  #div_h4_c {
+    margin-left: 0%;
+  }
+  body div.layout .yrow i {
+    font-size: 250%;
+  }
+  body div.layout .yrow h3 {
+    font-size: 125%;
+  }
+  #quotes {
+    margin-bottom: 0%;
+    margin-top: 0%;
+  }
+  .yrow {
+    float: left;
+  }
+}
+/*
+  jvm pages css ends
+*/
+
+/* udyat page starts */
+
+.shortintro {
+  margin-top: 10em;
+}
+.shortintro h1 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 2.5%;
+}
+.shortintro p {
+  font-size: 125%;
+  text-align: center;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+}
+.dbox {
+  height: auto;
+  margin-bottom: 5%;
+}
+.dbox i {
+  font-size: 450%;
+  border-radius: 100%;
+  border: 1px solid blue;
+  padding: 10%;
+  color: purple;
+  background: #f1f1f1;
+  margin-top: 7.5%;
+}
+.dbox i:hover {
+  color: #f1f1f1;
+  background: purple;
+}
+
+.h4_t {
+  text-align: left;
+  text-decoration: underline;
+}
+.h4_c {
+  text-align: right;
+  text-decoration: underline;
+}
+#div_h4_t {
+  margin-right: 4%;
+}
+#div_h4_c {
+  margin-left: 4%;
+}
+.dbox p {
+  font-size: 125%;
+  margin-top: 2%;
+}
+.h4_p_c {
+  text-align: right;
+}
+.h4_p_t {
+  text-align: left;
+}
+#more {
+  display: none;
+}
+#seeMore {
+  cursor: pointer;
+  color: red;
+}
+.layout h3 {
+  font-size: 200%;
+  margin-bottom: 5%;
+  text-align: center;
+  margin-top: 1.5%;
+  text-decoration: underline;
+}
+#quotes {
+  text-align: center;
+  background: #f1f1f1;
+  border: 1px solid blue;
+  padding: 1%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+.symbols {
+  font-size: 125%;
+}
+@media screen and (max-width: 992px) {
+  body div.shortintro {
+    margin-top: 6.5em;
+  }
+  body div.layout .arow p {
+    font-size: 100%;
+    margin-top: 1%;
+  }
+  body div.layout .dbox {
+    margin-bottom: 2.5%;
+  }
+  body div.layout .arow i {
+    margin-top: 20%;
+  }
+  body div.layout .arow h4 {
+    font-size: 125%;
+  }
+  #div_h4_t {
+    margin-right: 2%;
+  }
+  #div_h4_c {
+    margin-left: 2%;
+  }
+  body div.layout i {
+    font-size: 300%;
+  }
+  body div.layout h3 {
+    font-size: 150%;
+  }
+  #qoutes {
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+}
+@media screen and (max-width: 662px) {
+  body div.layout .arow p {
+    font-size: 75%;
+    margin-top: 0%;
+  }
+  body div.layout .dbox {
+    margin-bottom: 0.5%;
+  }
+  body div.layout .arow h4 {
+    font-size: 100%;
+  }
+  body div.layout .arow i {
+    margin-top: 30%;
+  }
+  #div_h4_t {
+    margin-right: 0%;
+  }
+  #div_h4_c {
+    margin-left: 0%;
+  }
+  body div.layout i {
+    font-size: 250%;
+  }
+  body div.layout h3 {
+    font-size: 125%;
+  }
+  #quotes {
+    margin-bottom: 0%;
+    margin-top: 0%;
+  }
+}
+
+/* udyat page ends */

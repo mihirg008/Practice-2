@@ -186,13 +186,14 @@ img::-moz-selection {
 }
 
 header.masthead {
-  margin-top: 7em;
+  margin-top: 5.5em;
   text-align: center;
   color: white;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  height:100vh;
 }
 
 header.masthead .intro-text {

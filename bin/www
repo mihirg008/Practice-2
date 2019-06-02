@@ -12,7 +12,7 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || '4000');
 app.set('port', port);
 
 /**
@@ -88,3 +88,36 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
+var MongoClient = require('mongodb').MongoClient;
+var url = "mongodb+srv://mihirg008:mig@cluster0-6mdse.mongodb.net/test";
+
+MongoClient.connect(url,{useNewUrlParser: true}, function(err, db) {
+  useNewUrlParser: true
+  if (err) throw err;
+  console.log("Database created!");
+  db.close();
+});
+var MongoClient = require('mongodb').MongoClient;
+var url = "mongodb://localhost:27017/";
+
+MongoClient.connect(url,{useNewUrlParser: true}, function(err, db) {
+  if (err) throw err;
+  var dbo = db.db("test");
+  dbo.createCollection("customers", function(err, res) {
+    if (err) throw err;
+    console.log("Collection created!");
+    db.close();
+  });
+});
+
+MongoClient.connect(url,{useNewUrlParser: true}, function(err, db) {
+  if (err) throw err;
+  var dbo = db.db("test");
+  var myobj = { name: "Company Inc", address: "Highway 37" };
+  dbo.collection("customers").insertOne(myobj, function(err, res) {
+    if (err) throw err;
+    console.log("1 document inserted");
+    db.close();
+  });
+});

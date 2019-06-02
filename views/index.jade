@@ -2,6 +2,13 @@ extends layout
 
 block content
   //- Header
+  header.masthead(style='background-image:url("../img/#{top_image}")')
+    .container
+      .intro-text
+        .intro-lead-in Welcome To Our Website!
+        .intro-heading.text-uppercase It's Nice To Meet You
+        a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#about-uss') Tell Me More  
+
   //- About US
   section#about-uss
     .container
@@ -11,6 +18,9 @@ block content
           h2
           h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
       .row.text-center
+        | Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut ninja wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit ninja lobortis nisl ut aliquip ex ea commodo consequat. Duis ninja autem vel eum iriure dolor in hendrerit in vulputate ninja velit esse molestie consequat, vel illum dolore eu feugiat nulla ninja facilisis at vero eros et accumsan et iusto odio 
+        |dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam ninja ipsum liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi ninja non habent claritatem
+        a(href='/about') See More.. 
     //- Services
   section#services
     .container
@@ -21,38 +31,43 @@ block content
           h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
       .row.text-center
         .col-md-4
-          span.fa-stack.fa-4x
-            i.fas.fa-circle.fa-stack-2x.text-primary
-            i.fas.fa-shopping-cart.fa-stack-1x.fa-inverse
-          h4.service-heading JVM
+          a(href='/jvm')
+            span.fa-stack.fa-4x
+              i.fas.fa-circle.fa-stack-2x.text-primary
+              i.fas.fa-shopping-cart.fa-stack-1x.fa-inverse
+            h4.service-heading JVM
           p.text-muted
             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
         .col-md-4
-          span.fa-stack.fa-4x
-            i.fas.fa-circle.fa-stack-2x.text-primary
-            i.fas.fa-laptop.fa-stack-1x.fa-inverse
-          h4.service-heading Prayas
+          a(href='/prayas')
+            span.fa-stack.fa-4x
+              i.fas.fa-circle.fa-stack-2x.text-primary
+              i.fas.fa-laptop.fa-stack-1x.fa-inverse
+            h4.service-heading Prayas
           p.text-muted
             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
         .col-md-4
-          span.fa-stack.fa-4x
-            i.fas.fa-circle.fa-stack-2x.text-primary
-            i.fas.fa-lock.fa-stack-1x.fa-inverse
-          h4.service-heading Udyat
+          a(href='/udyat')
+            span.fa-stack.fa-4x
+              i.fas.fa-circle.fa-stack-2x.text-primary
+              i.fas.fa-lock.fa-stack-1x.fa-inverse
+            h4.service-heading Udyat
           p.text-muted
             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
         .col-md-4.offset-md-2
-          span.fa-stack.fa-4x
-            i.fas.fa-circle.fa-stack-2x.text-primary
-            i.fas.fa-laptop.fa-stack-1x.fa-inverse
-          h4.service-heading Pedals for Progress
+          a(href='/prayas#pfp')
+            span.fa-stack.fa-4x
+              i.fas.fa-circle.fa-stack-2x.text-primary
+              i.fas.fa-laptop.fa-stack-1x.fa-inverse
+            h4.service-heading Pedals for Progress
           p.text-muted
             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
         .col-md-4
-          span.fa-stack.fa-4x
-            i.fas.fa-circle.fa-stack-2x.text-primary
-            i.fas.fa-lock.fa-stack-1x.fa-inverse
-          h4.service-heading KGP Blood Connect
+          a(href='#')
+            span.fa-stack.fa-4x
+              i.fas.fa-circle.fa-stack-2x.text-primary
+              i.fas.fa-lock.fa-stack-1x.fa-inverse
+            h4.service-heading KGP Blood Connect
           p.text-muted
             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
   //- LIGHT Centers Map
@@ -282,29 +297,7 @@ block content
               .col-lg-12.text-center
                 #success
                 button#sendMessageButton.btn.btn-primary.btn-xl.text-uppercase(type='submit') Send Message
-  //- Footer
-  footer
-    .container
-      .row
-        .col-md-4
-          span.copyright Copyright © GYWS Web Team 2019
-        .col-md-4
-          ul.list-inline.social-buttons
-            li.list-inline-item
-              a(href='#')
-                i.fab.fa-twitter
-            li.list-inline-item
-              a(href='#')
-                i.fab.fa-facebook-f
-            li.list-inline-item
-              a(href='#')
-                i.fab.fa-linkedin-in
-        .col-md-4
-          ul.list-inline.quicklinks
-            li.list-inline-item
-              a(href='#') Privacy Policy
-            li.list-inline-item
-              a(href='#') Terms of Use
+
   //- Portfolio Modals
   //- Modal 1
   #portfolioModal1.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
