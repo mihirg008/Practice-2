@@ -1,0 +1,23 @@
+
+block content
+  // Header
+   p #{msg}
+  form(method='POST', action='/member',style='padding : 200px;', enctype ='multipart/form-data')
+    label(for='fname') First Name
+    input#fname(type='text', name='firstname', placeholder='Your name..')
+    br
+    label(for='lname') Last Name
+    input#lname(type='text', name='lastname', placeholder='Your last name..')
+    br
+    label(for='country') Country
+    select#country(name='country')
+      option(value='australia') Australia
+      option(value='canada') Canada
+      option(value='usa') USA
+    br
+    .input-group.mb-3
+      .custom-file
+        input#inputGroupFile02.custom-file-input(name='myimage',type='file')
+        label.custom-file-label(for='inputGroupFile02', aria-describedby='inputGroupFileAddon02') Choose file
+    br  
+    input(type='submit', value='Submit')
