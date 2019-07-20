@@ -63,6 +63,12 @@ router.get('/udyat', function(req, res, next) {
                         atag:'about#about-uss'});
 });
 
+router.get('/contact', function(req, res, next) {
+  res.render('contact', { title: 'GYWS | Contact Us',
+                        top_image: 'header-bg.jpg',
+                        atag:'about#about-uss'});
+});
+
 router.get('/member', function(req,res){
   res.render('member');
 });

@@ -1,0 +1,159 @@
+extends layout
+
+block content
+  
+  header.masthead-au#about-uss(style='height:250px;margin-top:6%;')
+    .container
+      .intro-text
+        .intro-heading.text-uppercase.my-auto CONTACT US
+          
+  #contatti.row
+    .container-fluid
+      .row.maps.xd(style='height:500px;')
+        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.960628936669!2d87.2910206149543!3d22.27948118533436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d41313ab1978d%3A0xfa15d2e24afcf94d!2sGopali+Youth+Welfare+Society!5e0!3m2!1sen!2sin!4v1562858366712!5m2!1sen!2sin', style='border:0', allowfullscreen='', frameborder='0')
+        .xd1
+          h2.text-uppercase.mt-3.font-weight-bold.text-white DROP YOUR SUGGESTION
+          form(action='')
+            .row
+              .col-lg-6
+                .form-group
+                  input.form-control.mt-2(type='text', placeholder='Name', required='')
+              .col-lg-6
+                .form-group
+                  input.form-control.mt-2(type='text', placeholder='Address', required='')
+              .col-lg-6
+                .form-group
+                  input.form-control.mt-2(type='email', placeholder='Email', required='')
+              .col-lg-6
+                .form-group
+                  input.form-control.mt-2(type='number', placeholder='Contact No', required='')
+              .col-12
+                .form-group
+                  textarea#exampleFormControlTextarea1.form-control(placeholder='Message', rows='3', required='')
+              .col-12
+                button.btn.btn-light(type='submit') SUBMIT
+        .text-white.xd2
+        .text-white.xd3
+          h2.text-uppercase.mt-4.font-weight-bold.text-center Where we are
+          i.fas.fa-phone.mt-3
+          a(href='tel:+')  (03222) 296537
+          br
+          i.fa.fa-envelope.mt-3
+          a(href='') gywsoffice@gmail.com
+          br
+          br
+          i.fas.fa-globe.mt-3
+          |  Gopali Youth Welfare Society(Main Office),
+          br
+          | Gopali (No-shooting Area),
+          br
+          |                 P.O. – Salua, Dist. – Paschim Medinipur,
+          br
+          |                 West Bengal, Pin-721145.
+          .my-4
+            a(href='https://www.facebook.com/gyws.iitkgp/')
+              i.fab.fa-facebook.fa-3x.pr-4
+            a(href='https://www.linkedin.com/company/gopali-youth-welfare-society?originalSubdomain=in')
+              i.fab.fa-linkedin.fa-3x
+  section#team.pb-5
+    .container
+      h5.section-title.h1 OUR TEAM
+      .row
+        // Team member
+        .col-xs-12.col-sm-6.col-md-4
+          .image-flip(ontouchstart="this.classList.toggle('hover');")
+            .mainflip
+              .frontside
+                .card
+                  .card-body.text-center
+                    p
+                      img.img-fluid(src='https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png', alt='card image')
+                    h4.card-title
+                      span(style='font-size:14px') Mr. Mrinal Kanti Bhanja
+                    p.card-text Founder & President
+              .backside
+                .card
+                  .card-body.text-center.mt-4
+                    h4.card-title Reach us
+                    br
+                    br
+                    p.card-text    Office time: 5:00pm to 8:00pm.  
+                    ul.list-inline
+                      li.list-inline-item
+                        a.social-icon.text-xs-center(target='_blank', href='#')
+                          i.fab.fa-facebook
+                      li.list-inline-item
+                        a.social-icon.text-xs-center(target='_blank', href='#')
+                          i.fab.fa-twitter
+                      li.list-inline-item
+                        a.social-icon.text-xs-center(target='_blank', href='#')
+                          i.fab.fa-skype
+                      li.list-inline-item
+                        a.social-icon.text-xs-center(target='_blank', href='mrinalkbhanja@gmail.com')
+                          i.fab.fa-google
+        // ./Team member
+        // Team member
+        .col-xs-12.col-sm-6.col-md-4
+          .image-flip(ontouchstart="this.classList.toggle('hover');")
+            .mainflip
+              .frontside
+                .card
+                  .card-body.text-center
+                    p
+                      img.img-fluid(src='https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_02.png', alt='card image')
+                    h4.card-title
+                      span(style='font-size:14px') Amegh Bhavsar
+                    p.card-text Vice President
+              .backside
+                .card
+                  .card-body.text-center.mt-4
+                    h4.card-title Reach us
+                    br
+                    br
+                    p.card-text Phone:0747-808-6999 
+                    ul.list-inline
+                      li.list-inline-item
+                        a.social-icon.text-xs-center(target='_blank', href='https://www.facebook.com/amegh.bhavsar')
+                          i.fab.fa-facebook
+                      li.list-inline-item
+                        a.social-icon.text-xs-center(target='_blank', href='#')
+                          i.fabfa-twitter
+                      li.list-inline-item
+                        a.social-icon.text-xs-center(target='_blank', href='https://linkedin.com/in/ameghbhavsar?fbclid=IwAR077RbrOhzeYDZKJEDTCXQKPXuW-12fl1tFvf3iWvnORwfBVYgIVnw-hr4')
+                          i.fab.fa-linkedin
+                      li.list-inline-item
+                        a.social-icon.text-xs-center(target='_blank', href='#')
+                          i.fab.fa-google
+        // ./Team member
+        // Team member
+        .col-xs-12.col-sm-6.col-md-4
+          .image-flip(ontouchstart="this.classList.toggle('hover');")
+            .mainflip
+              .frontside
+                .card
+                  .card-body.text-center
+                    p
+                      img.img-fluid(src='https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_03.png', alt='card image')
+                    h4.card-title
+                      span(style='font-size:14px') Varun Singhal
+                    p.card-text Assistant Secretary
+              .backside
+                .card
+                  .card-body.text-center.mt-4
+                    h4.card-title Reach Us
+                    br
+                    br
+                    p.card-text Phone:0968-081-7050 
+                    ul.list-inline
+                      li.list-inline-item
+                        a.social-icon.text-xs-center(target='_blank', href='#')
+                          i.fab.fa-facebook
+                      li.list-inline-item
+                        a.social-icon.text-xs-center(target='_blank', href='#')
+                          i.fab.fa-twitter
+                      li.list-inline-item
+                        a.social-icon.text-xs-center(target='_blank', href='#')
+                          i.fab.fa-skype
+                      li.list-inline-item
+                        a.social-icon.text-xs-center(target='_blank', href='#')
+                          i.fab.fa-google
