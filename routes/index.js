@@ -68,6 +68,12 @@ router.get('/contact', function(req, res, next) {
                         top_image: 'header-bg.jpg',
                         atag:'about#about-uss'});
 });
+router.get('/donate', function(req, res, next) {
+  res.render('support', { title: 'GYWS | Support Us',
+                        top_image: 'header-bg.jpg',
+                        atag:'about#about-uss'});
+});
+
 
 router.get('/member', function(req,res){
   res.render('member');
