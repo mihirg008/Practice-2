@@ -24,7 +24,7 @@ var db = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
   password : '1111',
-  database : 'members'
+  database : 'member'
 });
 
 
@@ -74,15 +74,21 @@ router.get('/donate', function(req, res, next) {
                         atag:'about#about-uss'});
 });
 
-
-router.get('/member', function(req,res){
-  res.render('member');
+router.get('/members', function(req, res, next) {
+  res.render('members', { title: 'GYWS | Members',
+                        top_image: 'header-bg.jpg',
+                        atag:'about#about-uss'});
 });
 
-router.post('/member', urlencodedParser, function (req, res) {
+
+router.get('/member_test', function(req,res){
+  res.render('member_test');
+});
+
+router.post('/member_test', urlencodedParser, function (req, res) {
   upload(req, res, (err) => {
     if(err){
-      res.render('member', {msg: err});
+      res.render('member_test', {msg: err});
       console.log(err)
     } else {
       console.log(req.file);

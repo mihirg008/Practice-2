@@ -1,0 +1,84 @@
+extends layout
+
+block content
+  // Header
+  header.masthead-au#about-uss
+    .container
+      .intro-text
+        .intro-heading.text-uppercase.my-auto MEMBERS
+  .row.content-mem
+    .col-2(style='position:sticky')
+      #v-pills-tab.nav.flex-column.nav-pills(role='tablist', aria-orientation='vertical')
+        a#v-pills-home-tab.nav-link.active(data-toggle='pill', href='#v-pills-SEM', role='tab', aria-controls='v-pills-home', aria-selected='true') Senior Executive Members
+        a#v-pills-profile-tab.nav-link(data-toggle='pill', href='#v-pills-alumni', role='tab', aria-controls='v-pills-profile', aria-selected='false') Alumni
+        a#v-pills-messages-tab.nav-link(data-toggle='pill', href='#v-pills-advisory', role='tab', aria-controls='v-pills-messages', aria-selected='false') Advisory Committe
+        a#v-pills-settings-tab.nav-link(data-toggle='pill', href='#v-pills-coordiators', role='tab', aria-controls='v-pills-settings', aria-selected='false') Coordinators
+        a#v-pills-messages-tab.nav-link(data-toggle='pill', href='#v-pills-heads', role='tab', aria-controls='v-pills-messages', aria-selected='false') Heads
+        a#v-pills-settings-tab.nav-link(data-toggle='pill', href='#v-pills-gb', role='tab', aria-controls='v-pills-settings', aria-selected='false') General Body
+    .col-7.mem-names(style='')
+      #v-pills-tabContent.tab-content
+        #v-pills-SEM.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='v-pills-SEM-tab')
+          .row
+            #c1.col-sm-2.text-center
+            #c1.col-sm-2.col-xs-6.text-center
+              br
+              img#im-tr.img-circle(src='members_profile/SEM/abhishek.jpg')
+              br
+              #middle
+                #text(style='background-color:', black""='')
+                  a(href='https://m.facebook.com/profile.php')
+                    i#link.fab.fa-facebook-f(style='font-size:22px;')
+                  a(href='https://www.linkedin.com/in/abhishek-jain-137a31150')
+                    i#link.fa.fa-linkedin(style='font-size:22px;')
+                  i#link.fa.fa-envelope(style='font-size:22px;')
+              h5 Abhishek Jain
+              br
+            #c1.col-sm-2.col-xs-6.text-center
+              br
+              img#im-tr.img-circle(src='members_profile/SEM/unnamed.png')
+              br
+              #middle
+                #text(style='background-color:', black""='')
+                  a(href='')
+                    i#link.fab.fa-facebook-f(style='font-size:22px;')
+                  a(href='')
+                    i#link.fa.fa-linkedin(style='font-size:22px;')
+                  i#link.fa.fa-envelope(style='font-size:22px;')
+              h5 Aditya Bhagat
+              br
+            #c1.col-sm-2.col-xs-6.text-center
+              br
+              img#im-tr.img-circle(src='members_profile/SEM/unnamed.png')
+              br
+              #middle
+                #text(style='background-color:', black""='')
+                  a(href='')
+                    i#link.fab.fa-facebook-f(style='font-size:22px;')
+                  a(href='')
+                    i#link.fa.fa-linkedin(style='font-size:22px;')
+                  i#link.fa.fa-envelope(style='font-size:22px;')
+              h5 Aditya Bhagat
+              br
+            #c1.col-sm-2.col-xs-6.text-center
+              br
+              img#im-tr.img-circle(src='members_profile/SEM/unnamed.png')
+              br
+              #middle
+                #text(style='background-color:', black""='')
+                  a(href='')
+                    i#link.fab.fa-facebook-f(style='font-size:22px;')
+                  a(href='')
+                    i#link.fa.fa-linkedin(style='font-size:22px;')
+                  i#link.fa.fa-envelope(style='font-size:22px;')
+              h5 Ayush Khatarkar
+              br
+        #v-pills-alumni.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-profile-tab')
+          | To be Updated 1
+        #v-pills-advisory.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-messages-tab')
+          | To be updated 2
+        #v-pills-coordiators.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-settings-tab')
+          | To be updated 3
+        #v-pills-heads.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-settings-tab')
+          | To be updated 4
+        #v-pills-gb.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-settings-tab')
+          | To be updated 5
