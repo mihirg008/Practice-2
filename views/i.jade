@@ -2,42 +2,12 @@ extends layout
 
 block content
   //- Header
-  header.masthead 
-    .bd-example
-      #carouselExampleCaptions.carousel.slide(data-ride='carousel')
-        ol.carousel-indicators
-          li.active(data-target='#carouselExampleCaptions', data-slide-to='0')
-          li(data-target='#carouselExampleCaptions', data-slide-to='1')
-          li(data-target='#carouselExampleCaptions', data-slide-to='2')
-        .carousel-inner
-          .carousel-item.active(style=' background-color: black;')
-            img.d-block.vh-100(style='background-color: black;', src='img/header-bg.jpg', alt='...')
-            .carousel-caption.top-cap.d-block.d-md-block
-              h5 First slide label
-              p Nulla vitae elit libero, a pharetra augue mollis interdum.
-              a.btn.btn-primary.btn-lg.text-uppercase.js-scroll-trigger(href='#about-uss', style='border-radius: 100px;') Tell Me More
-              a.btn.btn-secondary.btn-lg.text-uppercase.js-scroll-trigger(href='#about-uss', style='border-radius: 100px;') Donate Now 
-          .carousel-item
-            img.d-block.vh-100(style='background: black;', src='img/header-bg.jpg', alt='...')
-            .carousel-caption.top-cap.d-block.d-md-block
-              h5 Second slide label
-              p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              a.btn.btn-primary.btn-lg.text-uppercase.js-scroll-trigger(href='#about-uss', style='border-radius: 100px;') Tell Me More
-              a.btn.btn-secondary.btn-lg.text-uppercase.js-scroll-trigger(href='#about-uss', style='border-radius: 100px;') Donate Now 
-          .carousel-item
-            img.d-block.vh-100(style='background: black;', src='img/header-bg.jpg', alt='...')
-            .carousel-caption.top-cap.d-block.d-md-block
-              h5 Third slide label
-              p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              a.btn.btn-primary.btn-lg.text-uppercase.js-scroll-trigger(href='#about-uss', style='border-radius: 100px;') Tell Me More
-              a.btn.btn-secondary.btn-lg.text-uppercase.js-scroll-trigger(href='#about-uss', style='border-radius: 100px;') Donate Now 
-        a.carousel-control-prev(href='#carouselExampleCaptions', role='button', data-slide='prev')
-          span.carousel-control-prev-icon(aria-hidden='true')
-          span.sr-only Previous
-        a.carousel-control-next(href='#carouselExampleCaptions', role='button', data-slide='next')
-          span.carousel-control-next-icon(aria-hidden='true')
-          span.sr-only Next
-
+  header.masthead(style='background-image:url("../img/#{top_image}")')
+    .container 
+      .intro-text
+        .intro-lead-in Welcome To Our Website!
+        .intro-heading.text-uppercase It's Nice To Meet You
+        a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#about-uss') Tell Me More  
 
   //- About US
   section#about-uss
@@ -102,112 +72,120 @@ block content
             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
   //- LIGHT Centers Map
   //- Events
-  ection
-    div
-      .container
-        h2.pb-3.pt-2.border-bottom.mb-5.text-center.section-heading.text-uppercase Our Journey
-        // first section
-        .row.align-items-center.how-it-works.d-flex
-          .col-2.text-center.bottom.d-inline-flex.justify-content-center.align-items-center
-            .circle.font-weight-bold 1
-          .col-6
-            h5 Fully Responsive
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus.
-        // path between 1-2
-        .row.timeline
-          .col-2
-            .corner.top-right
-          .col-8
-            hr
-          .col-2
-            .corner.left-bottom
-        // second section
-        .row.align-items-center.justify-content-end.how-it-works.d-flex
-          .col-6.text-right
-            h5 Using Bootstrap
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus.
-          .col-2.text-center.full.d-inline-flex.justify-content-center.align-items-center
-            .circle.font-weight-bold 2
-        // path between 2-3
-        .row.timeline
-          .col-2
-            .corner.right-bottom
-          .col-8
-            hr
-          .col-2
-            .corner.top-left
-        // third section
-        .row.align-items-center.how-it-works.d-flex
-          .col-2.text-center.top.d-inline-flex.justify-content-center.align-items-center(style='padding:0px')
-            .circle.font-weight-bold 3
-          .col-6
-            h5 Now with Pug and Sass
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus.
-
-  //- Team
-  section#contact
-    .container-fluid
+  section#events
+    .container
       .row
-        .col-md-6
-          .row
-            .col-md-6
-              ul(style='list-style: none;')
-                li
-                  h4.section-heading.text-center Sponsors
-                br
-                br
-                li
-                  #carousel1Controls.carousel.slide(data-ride='carousel')
-                    .carousel-inner
-                      .carousel-item.active
-                        img.d-block.w-50.mx-auto(src='img/team/11.jpg')
-                      .carousel-item
-                        img.d-block.w-50.mx-auto(src='img/team/11.jpg')
-                      .carousel-item
-                        img.d-block.w-50.mx-auto(src='img/team/11.jpg')
-                      a.carousel-control-prev(href='#carousel1Controls', role='button', data-slide='prev')
-                        span.sr-only Previous
-                      a.carousel-control-next(href='#carousel1Controls', role='button', data-slide='next')
-                        span.carousel-control-next-icon(aria-hidden='true')
-                        span.sr-only Next
-            .col-md-6
-              ul(style='list-style: none;')
-                li
-                  h4.section-heading.text-center Affiliations
-                br
-                br
-                li
-                  #carousel2Controls.carousel.slide(data-ride='carousel')
-                    .carousel-inner
-                      .carousel-item.active
-                        img.d-block.w-50.h-100.mx-auto(src='img/team/11.jpg')
-                      .carousel-item.text-center
-                        img.d-block.w-50.h-100.mx-auto(src='img/team/11.jpg')
-                      .carousel-item
-                        img.d-block.w-50.h-100.mx-auto(src='img/team/11.jpg')
-                      a.carousel-control-prev(href='#carousel2Controls', role='button', data-slide='prev')
-                        span.carousel-control-prev-icon(aria-hidden='true')
-                        span.sr-only Previous
-                      a.carousel-control-next(href='#carousel2Controls', role='button', data-slide='next')
-                        span.carousel-control-next-icon(aria-hidden='true')
-                        span.sr-only Next
-          .row
-            .col-md-12.text-center
-              p.mark-text 2000 Donors
-        .col-md-6
-          .container-fluid.row
-            #mapdiv.col-md-8
-              | This i sdiv 2
-              img#mapdiv(src='img/indiamap.png', usemap='#Map', border='0')
-              map#Map(name='Map')
-                area#gaya(shape='circle', alt='LIGHT GAYA', title='LIGHT GAYA', href='#contact', name='gaya', coords='105,26,107,126,257,140,256,27')
-                area#CUST_2(shape='circle', alt='LIGHT BHOPAL', title='LIGHT BHOPAL', href='#', coords='182,228,9', name='bhopal')
-                area#CUST_3(shape='circle', alt='LIGHT IIITDM KANCHIPURAM', title='LIGHT IIITDM KANCHIPURAM', href='#', coords='214,404,21', name='kanchipuram')
-                area(shape='circle', alt='LIGHT SAMVEDHNA', title='LIGHT SAMVEDHNA', href='#', name='samvedhna', coords='121,313,22')
-            #myDiv.col-md-4  This DIV hidden unless hover over the computer's monitor
+        .col-lg-12.text-center
+          h2.section-heading.text-uppercase ANNUAL TIMELINE
+          h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+      .row
+        .col-lg-12
+          ul.timeline
+            li
+              .timeline-image
+                img.rounded-circle.img-fluid(src='img/about/1.jpg', alt='')
+              .timeline-panel
+                .timeline-heading
+                  h4 January
+                  h4.subheading Yogdaan
+                .timeline-body
+                  p.text-muted
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+            li.timeline-inverted
+              .timeline-image
+                img.rounded-circle.img-fluid(src='img/about/2.jpg', alt='')
+              .timeline-panel
+                .timeline-heading
+                  h4 March
+                  h4.subheading Aashayein
+                .timeline-body
+                  p.text-muted
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+            li
+              .timeline-image
+                img.rounded-circle.img-fluid(src='img/about/3.jpg', alt='')
+              .timeline-panel
+                .timeline-heading
+                  h4 December 2012
+                  h4.subheading Transition to Full Service
+                .timeline-body
+                  p.text-muted
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+            li.timeline-inverted
+              .timeline-image
+                img.rounded-circle.img-fluid(src='img/about/4.jpg', alt='')
+              .timeline-panel
+                .timeline-heading
+                  h4 July 2014
+                  h4.subheading Phase Two Expansion
+                .timeline-body
+                  p.text-muted
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+            li.timeline-inverted
+              .timeline-image
+                h4
+                  | Be Part
+                  br
+                  | Of Our
+                  br
+                  | Story!
+  //- Team
+  section#team.bg-light
+    .container
+      .row
+        .col-lg-12.text-center
+          h2.section-heading.text-uppercase Our Amazing Team
+          h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+      .row
+        .col-sm-4
+          .team-member
+            img.mx-auto.rounded-circle(src='img/team/1.jpg', alt='')
+            h4 Kay Garland
+            p.text-muted Lead Designer
+            ul.list-inline.social-buttons
+              li.list-inline-item
+                a(href='#')
+                  i.fab.fa-twitter
+              li.list-inline-item
+                a(href='#')
+                  i.fab.fa-facebook-f
+              li.list-inline-item
+                a(href='#')
+                  i.fab.fa-linkedin-in
+        .col-sm-4
+          .team-member
+            img.mx-auto.rounded-circle(src='img/team/2.jpg', alt='')
+            h4 Larry Parker
+            p.text-muted Lead Marketer
+            ul.list-inline.social-buttons
+              li.list-inline-item
+                a(href='#')
+                  i.fab.fa-twitter
+              li.list-inline-item
+                a(href='#')
+                  i.fab.fa-facebook-f
+              li.list-inline-item
+                a(href='#')
+                  i.fab.fa-linkedin-in
+        .col-sm-4
+          .team-member
+            img.mx-auto.rounded-circle(src='img/team/3.jpg', alt='')
+            h4 Diana Pertersen
+            p.text-muted Lead Developer
+            ul.list-inline.social-buttons
+              li.list-inline-item
+                a(href='#')
+                  i.fab.fa-twitter
+              li.list-inline-item
+                a(href='#')
+                  i.fab.fa-facebook-f
+              li.list-inline-item
+                a(href='#')
+                  i.fab.fa-linkedin-in
+      .row
+        .col-lg-8.mx-auto.text-center
+          p.large.text-muted
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
   //- Portfolio Grid
   section#portfolio.bg-light
     .container
@@ -271,22 +249,25 @@ block content
           .portfolio-caption
             h4 Window
             p.text-muted Photography
-  .container-fluid.layout
-  h3(style='text-align: center') Peoples Responses towards our initiatives
-  .row.yrow
-    .col-md-5.ybox
-      h5 Donors Speak
-      i.fa.fa-id-card-alt
-      p
-        | Changing the lives of children is a continuous process. Nothing can be done in a limited period. As individuals we have to continue to give support by way of financial help,social help, time as well as other resources. I believe in continuity and devotion without deviation. GYWS is doing just that.
-      h6 Pawan Gupta (Donor, Delhi)
-    .col-md-5.ybox
-      h5 Volunteers Speak
-      i.fa.fa-id-card-alt
-      p
-        | Working with GYWS has been a very revealing and enriching experience. I realized that there are many small things that can be done to contribute to child's education. Yes, what is needed is a bit of sensitivity and willingness to do something worthwhile.
-      h6 Anand Kumar (Volunteer, Kharagpur)
-
+  //- Clients
+  section.py-5
+    .container
+      .row
+        .col-md-2.col-sm-6.offset-md-1
+          a(href='#')
+            img.img-fluid.d-block.mx-auto(src='img/logos/essen.gif', alt='')
+        .col-md-2.col-sm-6
+          a(href='#')
+            img.img-fluid.d-block.mx-auto(src='img/logos/lepton.png', alt='')
+        .col-md-2.col-sm-6
+          a(href='#')
+            img.img-fluid.d-block.mx-auto(src='img/logos/logo.gif', style='width:4em', alt='')
+        .col-md-2.col-sm-6
+          a(href='#')
+            img.img-fluid.d-block.mx-auto(src='img/logos/telcon.jpg', style='width:5em', alt='')
+        .col-md-2.col-sm-6
+          a(href='#')
+            img.img-fluid.d-block.mx-auto(src='img/logos/ketex.png', style='width:8em', alt='')
   //- Contact
   section#contact
     .container

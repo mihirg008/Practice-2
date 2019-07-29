@@ -34,6 +34,11 @@ router.get('/', function(req, res, next) {
                         top_image: 'header-bg.jpg',
                         atag:'#about-uss'});
 });
+router.get('/i', function(req, res, next) {
+  res.render('i', { title: 'Gopali Youth Welfare Society',
+                        top_image: 'header-bg.jpg',
+                        atag:'#about-uss'});
+});
 
 /* GET about-us page. */
 router.get('/about', function(req, res, next) {

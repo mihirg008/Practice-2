@@ -60,3 +60,50 @@ header.masthead-au {
   background-position: center center;
   background-size: cover;
 }
+
+
+
+
+
+
+.parallax1{
+	padding:2%;
+	width:100%;
+	margin-left:0px;
+	 background:url(../img/background3.png);
+    background-attachment:fixed;
+    -webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+
+
+	}
+
+.box1{
+
+	  z-index: 1; /* The z-index should be higher than Google Maps */
+	  margin:5%;
+
+
+	  padding: 5%;
+	  background: #A2CED1;
+
+	  opacity:; /* Set the opacity for a slightly transparent Google Form */
+	  color: white;
+	   border:2px solid #EAF2F3;
+	   opacity:0.9;
+}
+
+.parallax2{
+	width:100%;
+	margin-left:0px;
+	 background:url(../img/background2.png);
+    background-attachment:fixed;
+    -webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+
+
+	}

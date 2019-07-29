@@ -23,8 +23,10 @@ link(href='css/main.css', rel='stylesheet')
 link(href='css/au.css', rel='stylesheet')
 link(href='css/contact.css', rel='stylesheet') 
 link(href='css/members.css', rel='stylesheet')
-link(href='css/support.css', rel='stylesheet') 
-link(href='css/initiatives.css', rel='stylesheet')    
+link(href='css/support.css', rel='stylesheet')
+link(href='css/map.css', rel='stylesheet')    
+link(href='css/initiatives.css', rel='stylesheet')
+link(href='css/timeline.css', rel='stylesheet')      
 body#page-top
 //- Navigation
 nav#mainNav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top(style='padding-top: 0px;padding-bottom: 0px;')
@@ -41,12 +43,8 @@ nav#mainNav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top(style='padding
           a.nav-link.js-scroll-trigger(href='/') HOME
         li.nav-item
           a.nav-link.js-scroll-trigger(href='/#{atag}') ABOUT US
-        li.nav-item.dropdown
-          a#navbarDropdown.nav-link(href='#Services', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') INITIATIVES
-          .dropdown-menu.bg-dark.border-0(aria-labelledby='navbarDropdown')
-            a.dropdown-item.x(href='/jvm') JVM
-            a.dropdown-item.x(href='/prayas') Prayas
-            a.dropdown-item.x(href='/udyat') Udyat 
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='/#services') INITIATIVES
         li.nav-item.dropdown
           a#navbarDropdown.nav-link(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') FINANCIALS
           .dropdown-menu.bg-dark.border-0(aria-labelledby='navbarDropdown')
@@ -97,4 +95,5 @@ script(src='js/jqBootstrapValidation.js')
 script(src='js/contact_me.js')
 //- Custom scripts for this template
 script(src='js/agency.js')
+script(src='js/map.js')
 script(src='js/slick.min.js', type='text/javascript')
