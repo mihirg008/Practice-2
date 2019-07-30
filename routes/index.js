@@ -27,7 +27,6 @@ var db = mysql.createConnection({
   database : 'member'
 });
 
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Gopali Youth Welfare Society',
@@ -46,7 +45,12 @@ router.get('/about', function(req, res, next) {
                         top_image: 'header-bg.jpg',
                         atag:'about#about-uss'});
 });
-
+/* GET media page. */
+router.get('/media', function(req, res, next) {
+  res.render('media', { title: 'Gopali Youth Welfare Society',
+                        top_image: 'header-bg.jpg',
+                        atag:'about#about-uss'});
+});
 /* GET jvm page. */
 router.get('/jvm', function(req, res, next) {
   res.render('jvm', { title: 'GYWS | JVM',
@@ -109,4 +113,5 @@ router.post('/member_test', urlencodedParser, function (req, res) {
   });
 
 });
+
 module.exports = router;
