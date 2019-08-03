@@ -1,6 +1,7 @@
 
 
 #myDiv {
+  background-color: black;
   color: white;
   display: none;
 	z-index:10000;

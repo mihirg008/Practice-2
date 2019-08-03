@@ -179,6 +179,12 @@ body div.shortintro h2{
 #div_h4_c {
   margin-left: 4%;
 }
+
+.dbox img {
+  font-size: 450%;
+  margin-top: 10%;
+  margin-left: 25%;
+}
 .dbox p {
   font-size: 125%;
   margin-top: 2%;

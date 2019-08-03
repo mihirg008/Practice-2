@@ -1,4 +1,6 @@
-
+body{
+	overflow-x:hidden
+}
 .full{
 	padding-left: 10px;
 	padding-right: 10px;
@@ -10,7 +12,7 @@
 			text-align:center-left;
 			word-wrap:break-word;
 
-			color:#85929E;
+			color:white;
 			font-family:Helvetica;
 		}
 
@@ -67,10 +69,10 @@ header.masthead-au {
 
 
 .parallax1{
-	padding:2%;
+	padding:1%;
 	width:100%;
 	margin-left:0px;
-	 background:url(../img/background3.png);
+	 background:url(../img/about/background3.PNG);
     background-attachment:fixed;
     -webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;
     background-size:cover;
@@ -80,25 +82,79 @@ header.masthead-au {
 
 	}
 
+
+
 .box1{
 
-	  z-index: 1; /* The z-index should be higher than Google Maps */
-	  margin:5%;
+	  z-index: 2; /* The z-index should be higher than Google Maps */
+
 
 
 	  padding: 5%;
-	  background: #A2CED1;
+	  background:black;
 
 	  opacity:; /* Set the opacity for a slightly transparent Google Form */
 	  color: white;
-	   border:2px solid #EAF2F3;
-	   opacity:0.9;
+
+	   opacity:0.6;
+	   margin-top:20%;
+
+}
+.box2{
+
+	  z-index: 2; /* The z-index should be higher than Google Maps */
+
+
+
+	  padding: 5%;
+	  background: #FDD329;
+
+	  opacity:; /* Set the opacity for a slightly transparent Google Form */
+	  color: black;
+
+	   opacity:0.8;
+	   width:104%;
+}
+
+.box3{
+
+	  z-index:-1; /* The z-index should be higher than Google Maps */
+
+
+
+	  padding: 5%;
+	  background:black;
+
+	  opacity:; /* Set the opacity for a slightly transparent Google Form */
+	  color: white;
+
+	   opacity:0.6;
+	   width:104%;
+
+
+}
+.box4{
+
+	  z-index:-1; /* The z-index should be higher than Google Maps */
+
+
+
+	  padding: 5%;
+
+
+	  opacity:; /* Set the opacity for a slightly transparent Google Form */
+	  color: black;
+
+	   opacity:0.5;
+	   width:104%;
+
+
 }
 
 .parallax2{
 	width:100%;
 	margin-left:0px;
-	 background:url(../img/background2.png);
+	 background:url(../img/about/background2.png);
     background-attachment:fixed;
     -webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;
     background-size:cover;
@@ -106,4 +162,9 @@ header.masthead-au {
     background-position:center center;
 
 
+	}
+	@media screen and (max-width: 600px) {
+		.box4{ width:100%;}
+		.box3{width:100%;}
+		.box2{width:100%;}
 	}

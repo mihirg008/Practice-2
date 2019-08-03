@@ -1,7 +1,7 @@
 .circle {
   padding: 13px 20px;
   border-radius: 50%;
-  background-color: #ED8D8D;
+  background-color: #fed136;
   color: #fff;
   max-height: 50px;
   z-index: 2;
@@ -13,7 +13,7 @@
 .how-it-works.row .col-2::after {
   content: "";
   position: absolute;
-  border-left: 3px solid #ED8D8D;
+  border-left: 3px solid #fed136;
   z-index: 1;
 }
 .how-it-works.row .col-2.bottom::after {
@@ -37,7 +37,7 @@
   height: 40px;
 }
 .timeline hr {
-  border-top: 3px solid #ED8D8D;
+  border-top: 3px solid #fed136;
   margin: 0;
   top: 17px;
   position: relative;
@@ -47,7 +47,7 @@
   overflow: hidden;
 }
 .timeline .corner {
-  border: 3px solid #ED8D8D;
+  border: 3px solid #fed136;
   width: 100%;
   position: relative;
   border-radius: 15px;
@@ -67,4 +67,13 @@
 .timeline .right-bottom {
   left: 50%;
   top: calc(50% - 3px);
+}
+.right{
+  margin-right: 1px;
+}
+.right2{
+  margin-right: 3px;
+}
+.left{
+  margin-left: 3px;
 }

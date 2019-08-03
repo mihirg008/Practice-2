@@ -46,11 +46,12 @@ block content
         .col-lg-12.text-center
           h2.section-heading.text-uppercase ABOUT US
           h2
-          h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+          h3.section-subheading.text-muted Brief intro  to our organization
       .row.text-center
-        | Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut ninja wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit ninja lobortis nisl ut aliquip ex ea commodo consequat. Duis ninja autem vel eum iriure dolor in hendrerit in vulputate ninja velit esse molestie consequat, vel illum dolore eu feugiat nulla ninja facilisis at vero eros et accumsan et iusto odio 
-        |dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam ninja ipsum liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi ninja non habent claritatem
-        a(href='/about') See More.. 
+        p
+          | Gopali Youth Welfare Society is a registered voluntary non-governmental organisation run by IIT Kharagpur students along with some faculty members with the support of local members from Gopali.This NGO at IIT Kharagpur was established in 2002 with a mission to improve the living standard of the people of Gopali, a village near IIT Kharagpur campus (around 5km from it). It was registered in 2004 under the West Bengal Societies registration act of 1961 with Reg. No S/IL/23893. This is an act of social service by IIT Kharagpur students with a motivation of returning something back to the society. 
+          a(href="/about", target="_blank") See More...
+  
     //- Services
   section#services
     .container
@@ -58,7 +59,7 @@ block content
         .col-lg-12.text-center
           h2.section-heading.text-uppercase INITIATIVES
           h2
-          h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+          h3.section-subheading.text-muted The Sectors we have been working in.
       .row.text-center
         .col-md-4
           a(href='/jvm')
@@ -67,7 +68,7 @@ block content
               i.fas.fa-school.fa-stack-1x.fa-inverse
             h4.service-heading JVM
           p.text-muted
-            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+            | Jagriti Vidya Mandir is an English medium school which aims to provide quality education to underprivileged children absolutely free of cost.
         .col-md-4
           a(href='/prayas')
             span.fa-stack.fa-4x
@@ -76,7 +77,7 @@ block content
                 img(src="img/AB.jpg", alt="", style="border-radius:50%;width:120px;margin-bottom: 10px;")
             h4.service-heading Prayas
           p.text-muted
-            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+            | A Program Associating Youth and Society.
         .col-md-4
           a(href='/udyat')
             span.fa-stack.fa-4x
@@ -84,7 +85,7 @@ block content
               i.fas.fa-chalkboard-teacher.fa-stack-1x.fa-inverse
             h4.service-heading Udyat
           p.text-muted
-            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+            | Working out with teacher's for students progress.
         .col-md-4.offset-md-2
           a(href='/prayas#pfp')
             span.fa-stack.fa-4x
@@ -92,7 +93,7 @@ block content
               i.fas.fa-bicycle.fa-stack-1x.fa-inverse
             h4.service-heading Pedals for Progress
           p.text-muted
-            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+            | One should try to help out others.
         .col-md-4
           a(href='#')
             span.fa-stack.fa-4x
@@ -101,7 +102,7 @@ block content
                 img(src="img/AB2.jpg", alt="", style="border-radius:50%;width:120px;margin-bottom: 11px;")
             h4.service-heading KGP Blood Connect
           p.text-muted
-            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+            | To help those in need of blood as soon as possible.
   //- LIGHT Centers Map
   //- Events
   section
@@ -110,12 +111,15 @@ block content
         h2.pb-3.pt-2.border-bottom.mb-5.text-center.section-heading.text-uppercase Our Journey
         // first section
         .row.align-items-center.how-it-works.d-flex
-          .col-2.text-center.bottom.d-inline-flex.justify-content-center.align-items-center
+          .col-2.text-center.bottom.d-inline-flex.justify-content-center.align-items-center(style='padding: 0;')
             .circle.font-weight-bold 1
+          .col-2.justify-content-center(style='padding: 0;')
+            img.justify-content-center(src='img/timeline_pngs/t3.png', style='max-width: 80%;')
           .col-6
-            h5 Fully Responsive
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus.
+            div
+              h4 2002
+              p
+                | GYWS was established in 2002 with a mission to improve the living standards of the people of Gopali like villages.
         // path between 1-2
         .row.timeline
           .col-2
@@ -127,10 +131,11 @@ block content
         // second section
         .row.align-items-center.justify-content-end.how-it-works.d-flex
           .col-6.text-right
-            h5 Using Bootstrap
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus.
-          .col-2.text-center.full.d-inline-flex.justify-content-center.align-items-center
+            h4 2004
+            p Registered under the West Bengal Societies Registration Act of 1961.
+          .col-2(style='padding: 0;')
+            img(src='img/timeline_pngs/t9.png', style='max-width: 80%; position: relative; left: 20%')
+          .col-2.text-center.full.d-inline-flex.justify-content-center.align-items-center(style='padding: 0;')
             .circle.font-weight-bold 2
         // path between 2-3
         .row.timeline
@@ -142,15 +147,72 @@ block content
             .corner.top-left
         // third section
         .row.align-items-center.how-it-works.d-flex
-          .col-2.text-center.top.d-inline-flex.justify-content-center.align-items-center(style='padding:0px')
+          .col-2.text-center.full.d-inline-flex.justify-content-center.align-items-center.left(style='padding: 0;')
             .circle.font-weight-bold 3
+          .col-2(style='padding: 0;')
+            img(src='img/timeline_pngs/t10.png', style='max-width: 80%;')
           .col-6
-            h5 Now with Pug and Sass
+            div
+              h4 2008
+              p
+                | GYWS embarked on an education program Jagriti Vidya Mandir in a rented building, focused upon providing quality education.
+        // path between 3-4
+        .row.timeline
+          .col-2
+            .corner.top-right
+          .col-8
+            hr
+          .col-2
+            .corner.left-bottom
+        // fourth section
+        .row.align-items-center.justify-content-end.how-it-works.d-flex
+          .col-6.text-right
+            h4 2012
+            p 2 acres of land was purchased, foundation of Jagriti Vidya Mandir was laid.
+          .col-2(style='padding: 0;')
+            img(src='img/timeline_pngs/t13.png', style='max-width: 80%; position: relative; left: 20%')
+          .col-2.text-center.full.d-inline-flex.justify-content-center.align-items-center(style='padding: 0;')
+            .circle.font-weight-bold 4
+        // path between 4-5
+        .row.timeline
+          .col-2
+            .corner.right-bottom
+          .col-8
+            hr
+          .col-2
+            .corner.top-left
+        // fifth section
+        .row.align-items-center.how-it-works.d-flex
+          .col-2.text-center.full.d-inline-flex.justify-content-center.align-items-center.left(style='padding: 0;')
+            .circle.font-weight-bold 5
+          .col-2(style='padding: 0;')
+            img(src='img/timeline_pngs/light.png', style='max-width: 80%;')
+          .col-6
+            div
+              h4 2017
+              p
+                | GYWS came up with the initiative named LIGHT to reach to masses all over India, to reciprocate similar models of social upliftment throughout the nation.
+        // path between 5-6
+        .row.timeline
+          .col-2
+            .corner.top-right
+          .col-8
+            hr
+          .col-2
+            .corner.left-bottom
+        // sixth section
+        .row.align-items-center.justify-content-end.how-it-works.d-flex
+          .col-6.text-right
+            h4 2019
             p
-              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus.
+              | GYWS successfully got registered under GuideStar India, one of India’s largest and most reliable NGO information repository, adding another star to it's strive for transparency.
+          .col-2(style='padding: 0;')
+            img(src='img/timeline_pngs/guidestar.png', style='max-width: 80%; position: relative; left: 20%')
+          .col-2.text-center.top.right2.d-inline-flex.justify-content-center.align-items-center(style='padding: 0;')
+            .circle.font-weight-bold 6
 
   //- Team
-  section#contact
+  section#reach
     .container-fluid
       .row
         .col-md-6
