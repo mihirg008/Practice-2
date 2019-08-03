@@ -9,139 +9,23 @@ block content
   .row.content-mem
     .col-md-2.col-sm-1(style='position:sticky')
       #v-pills-tab.nav.flex-column.nav-pills(role='tablist', aria-orientation='vertical')
-        a#v-pills-profile-tab.nav-link.active(data-toggle='pill', href='#v-pills-alumni', role='tab', aria-controls='v-pills-profile', aria-selected='false') Our Alumni
+        a#v-pills-profile-tab.nav-link(data-toggle='pill', href='#v-pills-alumni', role='tab', aria-controls='v-pills-profile', aria-selected='false') Our Alumni
         a#v-pills-messages-tab.nav-link(data-toggle='pill', href='#v-pills-advisory', role='tab', aria-controls='v-pills-messages', aria-selected='false') Advisory Committe
         a#v-pills-settings-tab.nav-link(data-toggle='pill', href='#v-pills-gb', role='tab', aria-controls='v-pills-settings', aria-selected='false') Governing Body 
         a#v-pills-settings-tab.nav-link(data-toggle='pill', href='#v-pills-coordiators', role='tab', aria-controls='v-pills-settings', aria-selected='false') Coordinators
         a#v-pills-messages-tab.nav-link(data-toggle='pill', href='#v-pills-heads', role='tab', aria-controls='v-pills-messages', aria-selected='false') Heads
-        a#v-pills-home-tab.nav-link(data-toggle='pill', href='#v-pills-SEM', role='tab', aria-controls='v-pills-home', aria-selected='true') Senior Executive Members
+        a#v-pills-home-tab.nav-link.active(data-toggle='pill', href='#v-pills-SEM', role='tab', aria-controls='v-pills-home', aria-selected='true') Senior Executive Members
     .col-md-7.col-sm-5.mem-names
       #v-pills-tabContent.tab-content
         #v-pills-SEM.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='v-pills-SEM-tab')
-          .row
-            .col-sm-3
-              .team-member
-                img.mx-auto.rounded-circle(src='img/team/1.jpg', alt='')
-                h4 Kay Garland
-                p.text-muted Lead Designer
-                ul.list-inline.social-buttons
-                  li.list-inline-item
-                    a(href='#')
-                      i.fas.fa-envelope
-                  li.list-inline-item
-                    a(href='#')
-                      i.fab.fa-facebook-f
-                  li.list-inline-item
-                    a(href='#')
-                      i.fab.fa-linkedin-in
-            .col-sm-3
-              .team-member
-                img.mx-auto.rounded-circle(src='img/team/2.jpg', alt='')
-                h4 Larry Parker
-                p.text-muted Lead Marketer
-                ul.list-inline.social-buttons
-                  li.list-inline-item
-                    a(href='#')
-                      i.fas.fa-envelope
-                  li.list-inline-item
-                    a(href='#')
-                      i.fab.fa-facebook-f
-                  li.list-inline-item
-                    a(href='#')
-                      i.fab.fa-linkedin-in
-            .col-sm-3
-              .team-member
-                img.mx-auto.rounded-circle(src='img/team/3.jpg', alt='')
-                h4 Diana Pertersen
-                p.text-muted Lead Developer
-                ul.list-inline.social-buttons
-                  li.list-inline-item
-                    a(href='#')
-                      i.fas.fa-envelope
-                  li.list-inline-item
-                    a(href='#')
-                      i.fab.fa-facebook-f
-                  li.list-inline-item
-                    a(href='#')
-                      i.fab.fa-linkedin-in
-            .col-sm-3
-              .team-member
-                img.mx-auto.rounded-circle(src='img/team/3.jpg', alt='')
-                h4 Diana Pertersen
-                p.text-muted Lead Developer
-                ul.list-inline.social-buttons
-                  li.list-inline-item
-                    a(href='#')
-                      i.fas.fa-envelope
-                  li.list-inline-item
-                    a(href='#')
-                      i.fab.fa-facebook-f
-                  li.list-inline-item
-                    a(href='#')
-                      i.fab.fa-linkedin-in
-          .row
-            .col-sm-3
-              .team-member
-                img.mx-auto.rounded-circle(src='img/team/1.jpg', alt='')
-                h4 Kay Garland
-                p.text-muted Lead Designer
-                ul.list-inline.social-buttons
-                  li.list-inline-item
-                    a(href='#')
-                      i.fas.fa-envelope
-                  li.list-inline-item
-                    a(href='#')
-                      i.fab.fa-facebook-f
-                  li.list-inline-item
-                    a(href='#')
-                      i.fab.fa-linkedin-in
-            .col-sm-3
-              .team-member
-                img.mx-auto.rounded-circle(src='img/team/2.jpg', alt='')
-                h4 Larry Parker
-                p.text-muted Lead Marketer
-                ul.list-inline.social-buttons
-                  li.list-inline-item
-                    a(href='#')
-                      i.fas.fa-envelope
-                  li.list-inline-item
-                    a(href='#')
-                      i.fab.fa-facebook-f
-                  li.list-inline-item
-                    a(href='#')
-                      i.fab.fa-linkedin-in
-            .col-sm-3
-              .team-member
-                img.mx-auto.rounded-circle(src='img/team/3.jpg', alt='')
-                h4 Diana Pertersen
-                p.text-muted Lead Developer
-                ul.list-inline.social-buttons
-                  li.list-inline-item
-                    a(href='#')
-                      i.fas.fa-envelope
-                  li.list-inline-item
-                    a(href='#')
-                      i.fab.fa-facebook-f
-                  li.list-inline-item
-                    a(href='#')
-                      i.fab.fa-linkedin-in
-            .col-sm-3
-              .team-member
-                img.mx-auto.rounded-circle(src='img/team/3.jpg', alt='')
-                h4 Diana Pertersen
-                p.text-muted Lead Developer
-                ul.list-inline.social-buttons
-                  li.list-inline-item
-                    a(href='#')
-                      i.fas.fa-envelope
-                  li.list-inline-item
-                    a(href='#')
-                      i.fab.fa-facebook-f
-                  li.list-inline-item
-                    a(href='#')
-                      i.fab.fa-linkedin-in
-        #v-pills-alumni.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-profile-tab') To be Updated 1
-        #v-pills-advisory.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-messages-tab') To be updated 2
-        #v-pills-coordiators.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-settings-tab') To be updated 3
-        #v-pills-heads.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-settings-tab') To be updated 4
-        #v-pills-gb.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-settings-tab') To be updated 5
+          include members/sem
+        #v-pills-alumni.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-profile-tab')
+          include members/alumni
+        #v-pills-advisory.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-messages-tab') 
+          include members/advisory
+        #v-pills-coordiators.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-settings-tab')
+          include members/coord
+        #v-pills-heads.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-settings-tab')
+          include members/heads
+        #v-pills-gb.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-settings-tab') 
+          include members/gb
