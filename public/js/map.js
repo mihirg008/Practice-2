@@ -2,17 +2,45 @@ function hovIn() {
  var areaID = $(this).attr('id');
  //alert('['+areaID+']');
   if (areaID == 'gaya') {
-   $('#myDiv').show();
+   $('#gayadiv').show();
   }
-  if (areaID == 'samved') {
-   $('#myDiv1').show();
+  if (areaID == 'samvedhna') {
+   $('#samvedhnadiv').show();
   }
-  if (areaID == 'kanchipuram') {
-   $('#myDiv2').show();
+  if (areaID == 'iiitdm') {
+   $('#iiitdmdiv').show();
+  }
+
+  if (areaID == 'rooh') {
+   $('#roohdiv').show();
+  }if (areaID == 'bhopal') {
+   $('#bhopaldiv').show();
+  }
+  if (areaID == 'aaroha') {
+   $('#aarohadiv').show();
+  }
+  if (areaID == 'sikkim') {
+   $('#sikkimdiv').show();
+  }
+  if (areaID == 'rotaract') {
+   $('#rotaractdiv').show();
+  }
+  if (areaID == 'ffi') {
+   $('#ffidiv').show();
   }
 }
 function hovOut() {
-  $('#myDiv').hide();
+  $('#gayadiv').hide();
+   $('#roohdiv').hide();
+    $('#aarohadiv').hide();
+	 $('#bhopaldiv').hide();
+	 $('#sikkimdiv').hide();
+	 $('#rotaractdiv').hide();
+	 $('#ffidiv').hide();
+	 $('#iiitdmdiv').hide();
+
+	 $('#samvedhnadiv').hide();
+
 }
 $('map area').hover(hovIn, hovOut);
 

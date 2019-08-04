@@ -13,24 +13,24 @@ block content
           .carousel-item.active(style=' background-color: black;')
             img.d-block.vh-100(style='background-color: black;', src='img/home-slide/1.jpg', alt='...')
             .carousel-caption.top-cap.d-block.d-md-block
-              h5 First slide label
-              p Nulla vitae elit libero, a pharetra augue mollis interdum.
+              //- h5 First slide label
+              //- p Nulla vitae elit libero, a pharetra augue mollis interdum.
               a.btn.btn-primary.btn-lg.text-uppercase.js-scroll-trigger(href='#about-uss', style='border-radius: 100px;') Tell Me More
-              a.btn.btn-secondary.btn-lg.text-uppercase.js-scroll-trigger(href='#about-uss', style='border-radius: 100px;') Donate Now 
+              a.btn.btn-secondary.btn-lg.text-uppercase.js-scroll-trigger(href='/support', style='border-radius: 100px;') Donate Now 
           .carousel-item
             img.d-block.vh-100(style='background: black;', src='img/home-slide/2.jpg', alt='...')
             .carousel-caption.top-cap.d-block.d-md-block
-              h5 Second slide label
-              p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              //- h5 Second slide label
+              //- p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               a.btn.btn-primary.btn-lg.text-uppercase.js-scroll-trigger(href='#about-uss', style='border-radius: 100px;') Tell Me More
-              a.btn.btn-secondary.btn-lg.text-uppercase.js-scroll-trigger(href='#about-uss', style='border-radius: 100px;') Donate Now 
+              a.btn.btn-secondary.btn-lg.text-uppercase.js-scroll-trigger(href='/support', style='border-radius: 100px;') Donate Now 
           .carousel-item
             img.d-block.vh-100(style='background: black;', src='img/home-slide/3.jpg', alt='...')
             .carousel-caption.top-cap.d-block.d-md-block
-              h5 Third slide label
-              p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              //- h5 Third slide label
+              //- p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
               a.btn.btn-primary.btn-lg.text-uppercase.js-scroll-trigger(href='#about-uss', style='border-radius: 100px;') Tell Me More
-              a.btn.btn-secondary.btn-lg.text-uppercase.js-scroll-trigger(href='#about-uss', style='border-radius: 100px;') Donate Now 
+              a.btn.btn-secondary.btn-lg.text-uppercase.js-scroll-trigger(href='/support', style='border-radius: 100px;') Donate Now 
         a.carousel-control-prev(href='#carouselExampleCaptions', role='button', data-slide='prev')
           span.carousel-control-prev-icon(aria-hidden='true')
           span.sr-only Previous
@@ -50,7 +50,7 @@ block content
       .row.text-center
         p
           | Gopali Youth Welfare Society is a registered voluntary non-governmental organisation run by IIT Kharagpur students along with some faculty members with the support of local members from Gopali.This NGO at IIT Kharagpur was established in 2002 with a mission to improve the living standard of the people of Gopali, a village near IIT Kharagpur campus (around 5km from it). It was registered in 2004 under the West Bengal Societies registration act of 1961 with Reg. No S/IL/23893. This is an act of social service by IIT Kharagpur students with a motivation of returning something back to the society. 
-          a(href="/about", target="_blank") See More...
+          a(href="/about") See More...
   
     //- Services
   section#services
@@ -87,7 +87,7 @@ block content
           p.text-muted
             | Working out with teacher's for students progress.
         .col-md-4.offset-md-2
-          a(href='/prayas#pfp')
+          a(href='/pfp')
             span.fa-stack.fa-4x
               i.fas.fa-circle.fa-stack-2x.text-primary
               i.fas.fa-bicycle.fa-stack-1x.fa-inverse
@@ -95,7 +95,7 @@ block content
           p.text-muted
             | One should try to help out others.
         .col-md-4
-          a(href='#')
+          a(href='/kbc')
             span.fa-stack.fa-4x
               i.fas.fa-circle.fa-stack-2x.text-primary
               i.fas.fa-stack-1x
@@ -220,18 +220,26 @@ block content
             .col-md-6
               ul(style='list-style: none;')
                 li
-                  h4.section-heading.text-center Sponsors
+                  h4.section-heading.text-center(style="background:black;padding:4px") Sponsors
                 br
                 br
                 li
                   #carousel1Controls.carousel.slide(data-ride='carousel')
                     .carousel-inner
                       .carousel-item.active
-                        img.d-block.w-50.mx-auto(src='img/team/11.jpg')
+                        img.d-block.w-50.mx-auto(src='img/sponsors/CEL.png')
                       .carousel-item
-                        img.d-block.w-50.mx-auto(src='img/team/11.jpg')
+                        img.d-block.w-50.mx-auto(src='img/sponsors/Gangesjute.jpg')
                       .carousel-item
-                        img.d-block.w-50.mx-auto(src='img/team/11.jpg')
+                        img.d-block.w-50.mx-auto(src='img/sponsors/IFEC.JPG')
+                      .carousel-item
+                        img.d-block.w-50.mx-auto(src='img/sponsors/ketex.png')
+                      .carousel-item
+                        img.d-block.w-50.mx-auto(src='img/sponsors/lepton.jpg')
+                      .carousel-item
+                        img.d-block.w-50.mx-auto(src='img/sponsors/sankalpaindia.jpg')
+                      .carousel-item
+                        img.d-block.w-50.mx-auto(src='img/sponsors/Telcon.jpg')
                       a.carousel-control-prev(href='#carousel1Controls', role='button', data-slide='prev')
                         span.sr-only Previous
                       a.carousel-control-next(href='#carousel1Controls', role='button', data-slide='next')
@@ -240,18 +248,24 @@ block content
             .col-md-6
               ul(style='list-style: none;')
                 li
-                  h4.section-heading.text-center Affiliations
+                  h4.section-heading.text-center(style="background:black;padding:4px") Affiliations
                 br
                 br
                 li
                   #carousel2Controls.carousel.slide(data-ride='carousel')
                     .carousel-inner
                       .carousel-item.active
-                        img.d-block.w-50.h-100.mx-auto(src='img/team/11.jpg')
+                        img.d-block.w-50.h-100.mx-auto(src='img/sponsors/tiara.png')
                       .carousel-item.text-center
-                        img.d-block.w-50.h-100.mx-auto(src='img/team/11.jpg')
+                        img.d-block.w-50.h-100.mx-auto(src='img/sponsors/IIC.JPG')
                       .carousel-item
-                        img.d-block.w-50.h-100.mx-auto(src='img/team/11.jpg')
+                        img.d-block.w-50.h-100.mx-auto(src='img/sponsors/Amazon.png')
+                      .carousel-item
+                        img.d-block.w-50.h-100.mx-auto(src='img/sponsors/NCC.png')
+                      .carousel-item.text-center
+                        img.d-block.w-50.h-100.mx-auto(src='img/sponsors/NYKS.jpg')
+                      .carousel-item
+                        img.d-block.w-50.h-100.mx-auto(src='img/sponsors/TISS.png')
                       a.carousel-control-prev(href='#carousel2Controls', role='button', data-slide='prev')
                         span.carousel-control-prev-icon(aria-hidden='true')
                         span.sr-only Previous
@@ -260,18 +274,33 @@ block content
                         span.sr-only Next
           .row
             .col-md-12.text-center
-              p.mark-text 2000 Donors
+              p.mark-text(style="background:black;opacity:.5") 
+                |More than
+                br 
+                |2000 Donors
         .col-md-6
-          .container-fluid.row
-            #mapdiv.col-md-8
-              | This i sdiv 2
-              img#mapdiv(src='img/indiamap.png', usemap='#Map', border='0')
-              map#Map(name='Map')
-                area#gaya(shape='circle', alt='LIGHT GAYA', title='LIGHT GAYA', href='#contact', name='gaya', coords='105,26,107,126,257,140,256,27')
-                area#CUST_2(shape='circle', alt='LIGHT BHOPAL', title='LIGHT BHOPAL', href='#', coords='182,228,9', name='bhopal')
-                area#CUST_3(shape='circle', alt='LIGHT IIITDM KANCHIPURAM', title='LIGHT IIITDM KANCHIPURAM', href='#', coords='214,404,21', name='kanchipuram')
-                area(shape='circle', alt='LIGHT SAMVEDHNA', title='LIGHT SAMVEDHNA', href='#', name='samvedhna', coords='121,313,22')
-            #myDiv.col-md-4  This DIV hidden unless hover over the computer's monitor
+          #mapdiv.col-md-8
+            img#mapdiv(src='img/indiamap.png', usemap='#Map', border='0')
+            map#Map(name='Map')
+              area#rooh(target='', alt=' LIGHT Rooh', title=' LIGHT Rooh', href='', coords='140,137,10', shape='circle')
+              area#bhopal(target='', alt='LIGHT Bhopal', title='LIGHT Bhopal', href='', coords='140,240,9', shape='circle')
+              area#aaroha(target='', alt='LIGHT Aaroha ', title='LIGHT Aaroha ', href='', coords='156,252,10', shape='circle')
+              area#samvedhna(target='', alt='LIGHT Samvedhna', title='LIGHT Samvedhna', href='', coords='133,288,8', shape='circle')
+              area#rotaract(target='', alt=' LIGHT Rotaract', title=' LIGHT Rotaract', href='', coords='192,432,8', shape='circle')
+              area#iiitdm(target='', alt='LIGHT IITDM Kanchipuram', title='LIGHT IIITDM Kanchipuram', href='', coords='193,447,8', shape='circle')
+              area#gaya(target='', alt='LIGHT Gaya', title='LIGHT Gaya', href='', coords='275,210,10', shape='circle')
+              area#ffi(target='', alt='LIGHT FFI', title='LIGHT FFI', href='', coords='308,228,13', shape='circle')
+              area#sikkim(target='', alt='LIGHT Sikkim', title='LIGHT Sikkim', href='', coords='331,170,13', shape='circle')
+          #roohdiv.col-md-4.mydiv LIGHT Rooh
+          #bhopaldiv.col-md-4.myDiv  LIGHT Bhopal
+          #aarohadiv.col-md-4.myDiv  LIGHT Aaroha
+          #samvedhnadiv.col-md-4.myDiv  LIGHT Samvedhna
+          #rotaractdiv.col-md-4.myDiv  LIGHT Rotract
+          #iiitdmdiv.col-md-4.myDiv  LIGHT IITDM
+          #gayadiv.col-md-4.myDiv  LIGHT Gaya
+          #ffidiv.col-md-4.myDiv  LIGHT FFI
+          #sikkimdiv.col-md-4.myDiv  LIGHT Sikkim
+
   //- Portfolio Grid
   section#portfolio.bg-light
     .container
@@ -335,21 +364,84 @@ block content
           .portfolio-caption
             h4 Window
             p.text-muted Photography
-  .container-fluid.layout
-  h3(style='text-align: center') Peoples Responses towards our initiatives
-  .row.yrow
-    .col-md-5.ybox
-      h5 Donors Speak
-      i.fa.fa-id-card-alt
-      p
-        | Changing the lives of children is a continuous process. Nothing can be done in a limited period. As individuals we have to continue to give support by way of financial help,social help, time as well as other resources. I believe in continuity and devotion without deviation. GYWS is doing just that.
-      h6 Pawan Gupta (Donor, Delhi)
-    .col-md-5.ybox
-      h5 Volunteers Speak
-      i.fa.fa-id-card-alt
-      p
-        | Working with GYWS has been a very revealing and enriching experience. I realized that there are many small things that can be done to contribute to child's education. Yes, what is needed is a bit of sensitivity and willingness to do something worthwhile.
-      h6 Anand Kumar (Volunteer, Kharagpur)
+  
+  
+  .container-fluid-layout
+    h3(style='text-align: center; margin-bottom: 30px;') Testimonials
+    .row.yrow(style='justify-content: center')
+      .col-md-5.ybox
+        .row
+          .col-md-6
+            .image-flip(ontouchstart="this.classList.toggle('hover');")
+              .mainflip
+                .frontside
+                  .card.b
+                    .card-body.text-center
+                      p
+                        img.img-fluid(src='img/testimonial/partha-pratim-chakrabartiI.jpg')
+                      h4.card-title
+                        span(style='font-size:22px;color:white;') Prof. Partha Pratim Chakrabarti
+                      p.card-text(style='font-size:17px;color: white;') Former Director IIT Kharagpur
+                .backside
+                  .card.a
+                    .card-body.text-center.mt-4.a
+                      h4.card-title Testimonial
+                      p.card-text
+                        | “Having attended some GYWS events, the determination of the students to make a change amazes me. This is worth applause that they have taken the initiative to work for the underprivileged. I feel privileged to have such students in the campus who seek to give back to the society. Hope to see GYWS as well as other students come forward with more such initiatives."
+          .col-md-6
+            .image-flip(ontouchstart="this.classList.toggle('hover');")
+              .mainflip
+                .frontside
+                  .card.b
+                    .card-body.text-center
+                      p
+                        img.img-fluid(src='img/testimonial/roydasilva.jpg', alt='card image')
+                      br
+                      h4.card-title
+                        span(style='font-size:22px; color:white;') Mr Roy Da Silva
+                      p.card-text(style='font-size:17px;color: white;') Former President IIT Foundation
+                .backside
+                  .card.a
+                    .card-body.text-center.mt-4.a
+                      h4.card-title Testimonial
+                      p.card-text
+                        | “I would like to recognize GYWS at IIT Kharagpur at which I found out about when I visited PAN IIT GLOBAL CONFERENCE 2012 and what I said was about, you have got to establish a cause you would like to give back to and I’m extremely happy this organisation exists within IIT Kgp.”
+      .col-md-5.ybox
+        .row
+          .col-md-6
+            .image-flip(ontouchstart="this.classList.toggle('hover');")
+              .mainflip
+                .frontside
+                  .card.b
+                    .card-body.text-center
+                      p
+                        img.img-fluid(src='img/testimonial/shailesh_gandhi.jpg', alt='card image')
+                      h4.card-title
+                        span(style='font-size:22px ;color:white ') Mr. Shailesh Gandhi
+                      p.card-text(style='font-size:17px;color:white;') Former Chief Information Commissioner
+                .backside
+                  .card.a
+                    .card-body.text-center.mt-4.a
+                      h4.card-title Testimonial
+                      p.card-text
+                        | “I was happy to see the diverse activities being taken up by GYWS. The social commitment being continuously shown by the students of IIT Kharagpur to share knowledge and time with the inhabitants of Gopali and its surroundings is laudable. I was also impressed with the details of expenditure for the last few years which they have displayed on the website. I wish them all the best and send my good wishes.”
+          .col-md-6
+            .image-flip(ontouchstart="this.classList.toggle('hover');")
+              .mainflip
+                .frontside
+                  .card.b
+                    .card-body.text-center
+                      p
+                        img.img-fluid(src='img/testimonial/vc.jpg', alt='card image')
+                      h4.card-title
+                        span(style='font-size:22px;color:white;') Prof. Madhusudan Chakraborty
+                      p.card-text(style='font-size:16px;color: white;') Former Director, IIT Bhubaneswar
+                .backside
+                  .card.a
+                    .card-body.text-center.mt-4.a
+                      h4.card-title Testimonial
+                      p.card-text
+                        | “The society is fortunate to have some young Samaritans who have always committed themselves for the humanitarian cause of uplifting the condition of the poor and enlightening the future generation, let all of us join our hands together to make this endeavor, envisaged to help the needy aspire for a better future, become a success.”
 
   //- Contact
   section#contact

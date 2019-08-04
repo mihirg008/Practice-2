@@ -22,7 +22,7 @@ body div.shortintro h2{
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
-.xbox i {
+/* .xbox i {
   font-size: 250%;
   border-radius: 100%;
   border: 1px solid blue;
@@ -33,7 +33,7 @@ body div.shortintro h2{
 .xbox i:hover {
   color: #f1f1f1;
   background: purple;
-}
+} */
 .yrow {
   margin-top: 5%;
 }
@@ -47,9 +47,7 @@ body div.shortintro h2{
   text-align: center;
   height: auto;
 }
-.xbox img {
-  width: 100%;
-}
+
 .xbox h5 {
   margin-top: 3%;
 }
@@ -165,6 +163,11 @@ body div.shortintro h2{
   background: purple;
 }
 
+.dbox img {
+  font-size: 450%;
+  margin-top: 10%;
+  margin-left: 25%;
+}
 .h4_t {
   text-align: left;
   text-decoration: underline;
@@ -180,11 +183,6 @@ body div.shortintro h2{
   margin-left: 4%;
 }
 
-.dbox img {
-  font-size: 450%;
-  margin-top: 10%;
-  margin-left: 25%;
-}
 .dbox p {
   font-size: 125%;
   margin-top: 2%;

@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  section(style='padding-bottom: 0px;')
+    .container-fluid
+      div(style='margin-bottom: 5%; margin-bottom: 0;')
+        h1(style='text-align: center; margin-top: 3.5%; font-size: 3vw; ') Financial Certifications
+        .container-fluid(style='margin-top: 0%; margin-bottom: 0;')
+          .row
+            .col-md-3.col-6
+              img(style='width: 55%; position: relative; left: 22.5%; top: 22.5%;', src='img/financials/80g.png')
+            .col-md-3.col-6
+              img(style='width: 100%', src='img/financials/12aa.jpg')
+            .col-md-3.col-6
+              img(style='width: 100%; position: relative; top: 30%;', src='img/financials/guide.png')
+            .col-md-3.col-6
+              img(style='width: 100%; position: relative; top: 15%;', src='img/financials/fcra.png')
+  section(style='padding-top:5%; padding-bottom:5%; ')
+    .container-fluid
+      .row(style='justify-content: space-around;')
+        .col-5.col-sm-4
+          a(href='Impact Report 2017-18.pdf')
+            button.btn.btn-secondary.download_button(style='width: 100%; height: 150%; font-size: 1.3vw; ', type='button') DOWNLOAD IMPACT REPORT
+        .col-5.col-sm-4
+          a(href='')
+            button.btn.btn-secondary.download_button(style='width: 100%; height: 150%; font-size: 1.3vw; ', type='button') DOWNLOAD ANNUAL REPORT

@@ -1,0 +1,141 @@
+extends layout
+
+block content
+  // Header  
+  section(style='margin-top: 8em; text-align: center; background-color: yellow; padding-bottom: 1px; padding-top: 3px')
+    h1 KGP Blood Connect
+  section.jumbotron
+    .row
+      .col-md-12
+        .container
+          .row
+            .col-md-7(style='padding: 0px')
+              p(style='text-align: center; font-size: 115%; margin-top: 2%')
+                | KGP Blood Connect is a social initiative to help those truly in dire need of blood as efficiently as possible. The principle of this initiative is to create a database of all willing donors in the vicinity, containing all pertinent details such as age, gender, blood group and any health issues. These  donors were expected to give their contact details and be ready to come and donate blood at a short notice. Our hope was that through this method the people within as well as outside the campus would never be in a shortage of blood should they ever need it desperateky.
+            .col-md-1
+            .col-md-4
+              .embed-responsive.embed-responsive-1by1
+                iframe.embed-responsive-item(src='img/KBC_2.mp4')
+  section(style='background-color: white')
+    .row
+      .col-md-1
+      .col-md-10
+        .row
+          .col-md-4
+            .card
+              .card-body.jumbotron
+                h3.card-title
+                  .row
+                    .col-md-9 About Blood
+                    .col-md-3
+                      i.fa.fa-heartbeat.symbols(style='color: red; font-size: 200%')
+                p.card-text Check whether you can give blood or not. John Doe is an architect and engineer
+              // Button to Open the Modal
+              button.btn.btn-primary(type='button', data-toggle='modal', data-target='#myModal1', style='padding: 10px') Register Now
+              // The Modal
+              #myModal1.modal.fade
+                .modal-dialog.modal-dialog-scrollable
+                  .modal-content
+                    // Modal Header
+                    .modal-header
+                      h4.modal-title
+                      button.close(type='button', data-dismiss='modal') ×
+                    // Modal body
+                    .modal-body
+                      p
+                        | Link To Register : 
+                        a(href='https://docs.google.com/forms/d/e/1FAIpQLSehG47Cghc-NXychdaZKVfxXGgM68dMAfximyDOh6ZgChmmow/viewform', target='_blank') Form
+                    // Modal footer
+                    .modal-footer
+                      button.btn.btn-danger(type='button', data-dismiss='modal') Close
+          .col-md-4
+            .card
+              .card-body.jumbotron
+                h3.card-title
+                  .row
+                    .col-md-10
+                      | Become a 
+                      br
+                      |  Potential Donor
+                    .col-md-2
+                      i.fa.fa-handshake.symbols(style='color: red; font-size: 150%')
+                p.card-text Some example text some example text. John Doe is an architect and engineer
+              // Button to Open the Modal
+              button.btn.btn-primary(type='button', data-toggle='modal', data-target='#myModal2', style='padding: 10px') Register Now
+              // The Modal
+              #myModal2.modal.fade
+                .modal-dialog.modal-dialog-scrollable
+                  .modal-content
+                    // Modal Header
+                    .modal-header
+                      h4.modal-title
+                      button.close(type='button', data-dismiss='modal') ×
+                    // Modal body
+                    .modal-body
+                      p
+                        | Link To Register : 
+                        a(href='https://docs.google.com/forms/d/e/1FAIpQLSehG47Cghc-NXychdaZKVfxXGgM68dMAfximyDOh6ZgChmmow/viewform') Form
+                    // Modal footer
+                    .modal-footer
+                      button.btn.btn-danger(type='button', data-dismiss='modal') Close
+          .col-md-4
+            .card
+              .card-body.jumbotron
+                h3.card-title
+                  .row
+                    .col-md-10
+                      | Raise
+                      br
+                      |  a Request
+                    .col-md-2
+                      i.fa.fa-hand-pointer.symbols(style='color: red; font-size: 200%')
+                p.card-text Some example text some example text. John Doe is an architect and engineer
+              // Button to Open the Modal
+              button.btn.btn-primary(type='button', data-toggle='modal', data-target='#myModal3', style='padding: 10px') Register Now
+              // The Modal
+              #myModal3.modal.fade
+                .modal-dialog.modal-dialog-scrollable
+                  .modal-content
+                    // Modal Header
+                    .modal-header
+                      h4.modal-title
+                      button.close(type='button', data-dismiss='modal') ×
+                    // Modal body
+                    .modal-body
+                      p
+                        | Link To Register : 
+                        a(href='https://docs.google.com/forms/d/e/1FAIpQLSehG47Cghc-NXychdaZKVfxXGgM68dMAfximyDOh6ZgChmmow/viewform') Form
+                    // Modal footer
+                    .modal-footer
+                      button.btn.btn-danger(type='button', data-dismiss='modal') Close
+      .col-md-1
+  section.jumbotron
+    .container
+      h2(style='text-align: center; text-decoration: underline;') Contact us
+      br
+      br
+      .row
+        .col-md-3
+          .card
+            img.card-img-top(src='img/team/2.jpg', alt='Card image', style='width:100%')
+            .card-body
+              h4.card-title John Doe
+              p.card-text Some example text some example text. John Doe is an architect and engineer
+        .col-md-3
+          .card
+            img.card-img-top(src='img/team/2.jpg', alt='Card image', style='width:100%')
+            .card-body
+              h4.card-title John Doe
+              p.card-text Some example text some example text. John Doe is an architect and engineer
+        .col-md-3
+          .card
+            img.card-img-top(src='img/team/2.jpg', alt='Card image', style='width:100%')
+            .card-body
+              h4.card-title John Doe
+              p.card-text Some example text some example text. John Doe is an architect and engineer
+        .col-md-3
+          .card
+            img.card-img-top(src='img/team/2.jpg', alt='Card image', style='width:100%')
+            .card-body
+              h4.card-title John Doe
+              p.card-text Some example text some example text. John Doe is an architect and engineer

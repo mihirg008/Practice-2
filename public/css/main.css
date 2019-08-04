@@ -670,6 +670,7 @@ section#reach {
   background-image: url("../img/name-image.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
 }
 
 section#reach .section-heading {

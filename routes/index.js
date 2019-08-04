@@ -57,14 +57,24 @@ router.get('/jvm', function(req, res, next) {
                         top_image: 'header-bg.jpg',
                         atag:'about#about-uss'});
 });
-
+/* GET pfp page. */
+router.get('/pfp', function(req, res, next) {
+  res.render('pfp', { title: 'GYWS | Prayas',
+                        top_image: 'header-bg.jpg',
+                        atag:'about#about-uss'});
+});
 /* GET prayas page. */
 router.get('/prayas', function(req, res, next) {
   res.render('prayas', { title: 'GYWS | Prayas',
                         top_image: 'header-bg.jpg',
                         atag:'about#about-uss'});
 });
-
+/* GET KBC page. */
+router.get('/kbc', function(req, res, next) {
+  res.render('kbc', { title: 'GYWS | KGP Blood Connect',
+                        top_image: 'header-bg.jpg',
+                        atag:'about#about-uss'});
+});
 /* GET udyat page. */
 router.get('/udyat', function(req, res, next) {
   res.render('udyat', { title: 'GYWS | Udyat',
