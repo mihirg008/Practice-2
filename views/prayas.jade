@@ -6,50 +6,111 @@ block content
     .container
       .intro-text
         .intro-heading.text-uppercase.my-auto Prayas
-  .full  
-    .shortintro
-      p
-        | Gopali Youth Welfare Society is providing free of education to underprivileged childrens, and on the other hand working on the welfare of peoples of Gopali village. Prayas activities are mainly conducted by our PG and RS team members. We are working on the sustainable development, youth upliftment, and our another program, Helpping hands. Our main aim is to improve living standard of the peoples of Gopali Village
+  section.jumbotron(style='text-align: center;')
     .row
-      #quotes.col-md-12.ybox
-        img.col-md-2(src='img/portfolio/04-thumbnail (copy).jpg', style='border-radius: 50%')
-        br
-        br
-        h4 We have worked with the team /** team name**/  in these villages 
-        p
-          | We have conducted survey with ***. Through this survey we came to know about the problems which are coming in the way of improvment of living standards of these village peoples and their solutions. Now, we can take many important steps.
-        br
-        br
-        br
-        h5 /** View of the /*team*/ members towards this initiative **/.
-        i.fa.fa-id-card-alt
+      .col-md-4
+      .col-md-4
+        img(src='img/125.png', width='27.5%')
+      .col-md-4
+    .row
+      .col-md-1
+      .col-md-10
         p(style='margin-left: 5%; margin-right: 5%')
           span.symbols ❝
           | Changing the lives of children is a continuous process. Nothing can be done in a limited period. As individuals we have to continue to give support by way of financial help,social help, time as well as other resources. I believe in continuity and devotion without deviation. GYWS is doing just that.
           span.symbols ❞
+      .col-md-1
+    .row
+      .col-md-4
+      .col-md-4(style='text-align: center;')
         p
           span.symbols ☛
           | Moza bint Nasser
-    .container-fluid.layout
-      h3 Programs under PRAYAS
-      #div_h4_c.row.arow
-        .col-6.dbox
-          h4.h4_c Live Project
-          p.h4_p_c
-            | We are conducting survey with NSS units and making a plan for sustainable development of Gopali village
-        .col-3.dbox
-          i.fa.fa-desktop
-      #div_h4_t.row.arow(dir='rtl')
-        .col-6.dbox
-          h4.h4_t Youth Uplifment
-          p.h4_p_t We are providing training to the youth so that they can earn for their family.
-        .col-3.dbox
-          i.fa.fa-book
-      #div_h4_c.row.arow
-        .col-6.dbox
-          h4.h4_c Helping hands
-          p.h4_p_c
-            | Throygh this program school and college children are requested to collect donation for social work.
-        .col-3.dbox
-          i.fa.fa-language
-    hr
+      .col-md-4
+  .container-fluid.layout
+    h3 Programs under PRAYAS
+    #div_h4_c.row.arow
+      .col-6.dbox
+        h4.h4_c Rural Innovation Program
+        p.h4_p_c
+          | GYWS will be organised this program for five day program in association with the MHRD Institution Innovation Council - IIT Delhi & Gopali Youth Welfare Society.
+          br
+          button.btn.btn-primary(type='button', data-toggle='modal', data-target='#myModal4', style='padding: 10px') See More
+          // The Modal
+        #myModal4.modal.fade
+          .modal-dialog.modal-dialog-scrollable
+            .modal-content
+              // Modal Header
+              .modal-header
+                h4.modal-title(style='margin-left: 33%') Objectives
+                button.close(type='button', data-dismiss='modal') ×
+              // Modal body
+              .modal-body(style='font-size: 125%')
+                p
+                  | The objective of the program as jointly realized by both the organizations is to provide ground level exposure to the students of some of the nation’s best universities regarding the socio-economic problems of rural India by providing them an opportunity of real-life one to one interaction with the rural people.
+                p
+                  | The programme will not only ensure the student’s exposure to the grass-root realities of rural India but will also make sure that the students identify and solve some real-life problems through innovation and technology.
+                p IIC-IIT Delhi last program featured in a news channel.
+              // Modal footer
+              .modal-footer
+                button.btn.btn-danger(type='button', data-dismiss='modal') Close
+        p
+      .col-3.dbox
+        img(src='img/125.png', width='27.5%')
+    #div_h4_t.row.arow
+      .col-3
+      .col-3.dbox
+        img(src='img/125.png', width='27.5%')
+      .col-6.dbox
+        h4.h4_t Skill Development
+        p.h4_p_t
+          | The vision of Skill Development is to fulfil need of skilled manpower across Gopali village by tailoring coaching and basic computer training.
+          br
+          br
+          button.btn.btn-primary(type='button', data-toggle='modal', data-target='#myModal5', style='padding: 10px') See More
+          // The Modal
+        #myModal5.modal.fade
+          .modal-dialog.modal-dialog-scrollable
+            .modal-content
+              // Modal Header
+              .modal-header
+                h4.modal-title(style='margin-left: 33%') Objectives
+                button.close(type='button', data-dismiss='modal') ×
+              // Modal body
+              .modal-body(style='font-size: 125%')
+                ol
+                  li
+                    | To provide job oriented skills through proper training in fields of tailoring, computer training, etc.
+                  li
+                    | To provide quality education for free aiming at students admission in reputed institutions like Navodaya schools.
+                  li To provide education to underprivileged kids upto primary classes.
+                  li
+                    | To aware residents of nearby localities regarding welfare schemes run by government and also help with documents if required.
+                  li To monitor the projects being run by this team.
+              // Modal footer
+              .modal-footer
+                button.btn.btn-danger(type='button', data-dismiss='modal') Close
+        p
+    #div_h4_c.row.arow
+      .col-6.dbox
+        h4.h4_c Cloth Donation
+        p.h4_p_c
+          | An annual program for cloth donation to underprivileged peoples. Many students of IIT Kharagpur discard off these clothes. We collect these clothes and distribute among the peoples below poverty level.
+      .col-3.dbox
+        img(src='img/125.png', width='27.5%')
+    #div_h4_t.row.arow
+      .col-3
+      .col-3.dbox
+        img(src='img/125.png', width='27.5%')
+      .col-6.dbox
+        h4.h4_t Greenovation
+        p.h4_p_t
+          | The motto is to educate and help local farmers in adopting modern sustainable farming techniques. These techniques help farmers to increase their earnings from agricultural practices.
+    #div_h4_c.row.arow
+      .col-6.dbox
+        h4.h4_c Live Project
+        p.h4_p_c
+          | We conducted a survey in association with National Student Service in nearby area of Kharagpur so as to analyse ground level realities and to provide sustainable development of underpriviledge section of society.
+      .col-3.dbox
+        img(src='img/125.png', width='27.5%')
+  hr
