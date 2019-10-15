@@ -1,0 +1,670 @@
+extends layout
+
+block content
+  body
+    include navbar 
+    br
+    br
+    br
+    .container
+      ul#myTab.nav.nav-tabs(role='tablist')
+        li.nav-item
+          a#home-tab.nav-link.active(data-toggle='tab', href='#patents', role='tab', aria-controls='home', aria-selected='true')
+            | Patents
+        li.nav-item
+          a#profile-tab.nav-link(data-toggle='tab', href='#bookc', role='tab', aria-controls='profile', aria-selected='false')
+            | Book Chapters
+        li.nav-item
+          a#contact-tab.nav-link(data-toggle='tab', href='#ijourn', role='tab', aria-controls='contact', aria-selected='false')
+            | International Journals
+        li.nav-item
+          a#contact-tab.nav-link(data-toggle='tab', href='#njourn', role='tab', aria-controls='contact', aria-selected='false')
+            | National Journals
+        li.nav-item
+          a#contact-tab.nav-link(data-toggle='tab', href='#conf', role='tab', aria-controls='contact', aria-selected='false')
+            | Conferences
+    #myTabContent.tab-content
+      #patents.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
+        include publications/overall/patent
+      #ijourn.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+        include publications/overall/ijournal
+      #bookc.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab')
+        .data
+          table.table.table-hover
+            thead.thead-dark
+              tr
+                th(scope='col') #
+                th(scope='col') Title
+                th(scope='col') Year
+            tbody
+              tr
+                td 1
+                td
+                  div
+                    | Mishra, D., Sahu, S.K., Mahto, R.P., Pal, S.K., Pal, K., “Friction stir welding for joining of polymers. In: Dixit U., Narayanan R. (eds), Strengthening and Joining by Plastic Deformation. Lecture Notes on Multidisciplinary Industrial Engineering, Springer, 123-162.
+                td 2019
+              tr
+                td 2
+                td
+                  div
+                    | Jain, R., Pal, S. K., Singh, S. B., “Thermomechanical simulation of friction stir welding process using lagrangian method”, Simulation for Design and Manufacturing, Springer, 103-146.
+                td 2018
+              tr
+                td 3
+                td
+                  div
+                    | Joshi, H. S., Pal, S. K., Chakraborty, G., “Study on the delamination of GFRP composites in drilling: A finite element model”, Simulation for Design and Manufacturing, Springer, 1-43.
+                td 2018
+              tr
+                td 4
+                td
+                  div
+                    | Jain, R., Pal, S. K., Singh, S. B., “Numerical modeling methodologies for friction stir welding process”, Computational Methods and Production Engineering, Woodhead Publishing (Elsevier), 125-168.
+                td 2017
+              tr
+                td 5
+                td
+                  div
+                    | Rout, M., Pal, S. K., Singh, S. B., “Finite element modeling of hot rolling: Steady- and unsteady-state analyses”, Computational Methods and Production Engineering, Woodhead Publishing (Elsevier), 83-124.
+                td 2017
+              tr
+                td 6
+                td
+                  div
+                    | Sardar, S., Mandal, A., Pal, S. K., Singh, S. B., “Solid-State Joining by Roll Bonding and Accumulative Roll Bonding”, in Advances in Material Forming and Joining, Springer, 351-377.
+                td 2015
+              tr
+                td 7
+                td
+                  div
+                    | Rout, M., Pal, S. K., Singh, S. B., “Cross rolling: A metal forming process”, Modern Manufacturing Engineering: Research, Development and Education, Springer, 41-64.
+                td 2015
+              tr
+                td 8
+                td
+                  div
+                    | Jain, R., Kumari, K., Kesharwani, R., Kumar, S., Pal, S. K., Singh, S. B., Panda, S. K., Samantaray, A. K., “Frictions stir welding: scope and recent development”, Modern Manufacturing Engineering: Research, Development and Education, Springer, 179-229.
+                td 2015
+              tr
+                td 9
+                td.s1
+                  | Dutta, S., Pal, S. K., Sen, R., “Digital image processing in machining”, Modern Mechanical Engineering, Springer, 367-410.
+                td 2014
+              tr
+                td 10
+                td
+                  div
+                    | Priyadarshini, A, Pal, S. K., Samantaray, A. K., “Finite element modeling of chip formation in orthogonal machining”, Statistical and Computational Techniques in Manufacturing, Springer, 101-144.
+                td 2012
+      #njourn.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab')
+        .data
+          table.table.table-hover
+            thead.thead-dark
+              tr
+                th(scope='col') #
+                th(scope='col') Title
+                th(scope='col') Year
+            tbody
+              tr
+                td 1
+                td
+                  div
+                    | Pal, K., Pal, S. K., “Multiobjective optimization of pulsed gas metal arc welding process using neuro-NSGA-II”, Journal of the Institution of Engineers (India): Series C, Springer, (https://doi.org/10.1007/s40032-018-0466-2).
+                td 2018
+              tr
+                td 2
+                td
+                  div
+                    | Rout, M., Pal, S. K., Singh, S. B., “Finite element analysis of cross rolling on AISI 304 stainless steel: prediction of stress and strain fields”, Journal of the Institution of Engineers (India): Series C, Springer, 98(1), 27-35.
+                td 2017
+              tr
+                td 3
+                td
+                  div
+                    | Jain, R., Pal, S. K., Singh, S. B., “Finite element simulation of temperature and strain distribution during friction stir welding of AA2024 aluminum alloy”, Journal of the Institution of Engineers (India): Series C, Springer, 98(1), 37-43.
+                td 2017
+      #conf.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab')
+        br
+        br
+        h3.text-center National
+        .data
+          table.table.table-hover
+            thead.thead-dark
+              tr
+                th(scope='col') #
+                th(scope='col') Title
+                th(scope='col') Year
+            tbody
+              tr
+                td 1
+                td
+                  div
+                    | Iqbal, Md P., Jain, R., Pal, S. K., Mandal, P., “An experimental and numerical study of friction stir pipe welding of AA6061-T6 aluminum alloys”, 56th National Metallurgists` Day and 72nd Annual Technical Meeting (NMD-ATM), Kolkata.
+                td 2018
+              tr
+                td 2
+                td.s1
+                  | Pal, S. K.; “Industry 4.0 in friction stir welding”, National Conference on Advanced Functional Materials Processing and Manufacturing (NCAMMM), CMERI Durgapur.
+                td 2018
+              tr
+                td 3
+                td
+                  div
+                    | Iqbal, Md P., Jain, R., Pal, S. K., “Finite element modeling of friction stir pipe welding”, National conference on Advanced Functional Materials Processing And Manufacturing, CMERI Durgapur, Excel India Publishers, New Delhi, 72-75.
+                td 2017
+              tr
+                td 4
+                td.s1
+                  | Pal, S. K., Kumari, K., “Friction stir welding: Application and development”, 4th National Conference on Advances in Metrology (Ad-Met), CSIR-CMERI, XIV-XV.
+                td 2015
+              tr
+                td 5
+                td
+                  div
+                    | Pal, K., Pal, S. K., “Artificial neural network based monitoring of weld quality in pulsed metal inert gas welding using wavelet packets of current signal” National conference on recent trends in manufacturing science and technology (RTMST), NITTTR, Kolkata.
+                td 2013
+              tr
+                td 6
+                td
+                  div
+                    | Pal, Kamal, Pal, S. K., “Neural network based modeling of joint mechanical properties in pulsed MIG welding using statistical features of sensor signals”, National Conference on Advances in Simulation and Optimization Techniques in Mechanical Engineering, KIIT University, Orissa.
+                td 2012
+              tr
+                td 7
+                td
+                  div
+                    | Saha, P., Pal, S. K., Saha, P., “Modeling and multi-objective optimization in wire electro-discharge machining of in-situ tic reinforced austenitic manganese steel matrix composite”, National Conference on Recent Advances in Manufacturing Technology and Management (RAMTM), Jadavpur University, Kolkata.
+                td 2010
+              tr
+                td 8
+                td
+                  div
+                    | Jain, R., Pal, S. K., “Effect of process parameters on cutting forces and temperature in turning aisi 4340 using finite element approach”, National Conference on Recent Advances in Manufacturing Technology and Management (RAMTM), Jadavpur University, Kolkata.
+                td 2010
+              tr
+                td 9
+                td
+                  div
+                    | Das Chakladar, N., Pal, S. K., Mandal, P. S., “Finite element estimation of cutting parameters in drilling glass fiber reinforced plastic (GFRP) plates”, National Conference on Recent Advances in Manufacturing Technology and Management (RAMTM), Jadavpur University, Kolkata.
+                td 2010
+              tr
+                td 10
+                td
+                  div
+                    | Pal, K., Pal, S. K., “Artificial neural network based prediction of metal deposition in pulsed MIG welding using sensor signals”, National Conference on Recent Advances in Manufacturing Technology and Management (RAMTM), Jadavpur University, Kolkata, 169-174.
+                td 2010
+              tr
+                td 11
+                td
+                  div
+                    | Garg, S., Pal, S. K., Chakraborty D., “Effect of basis width on the performance of radial basis function network in prediction of drill wear”, Proceedings of the National Conference on Recent Trends in Information Systems and Management, Vidisha, M.P. 194-202.
+                td 2006
+              tr
+                td 12
+                td
+                  div
+                    | Panda, S. S., Chakraborty, D., Pal, S. K., “Prediction of drill flank wear using radial basis function neural network”, Proceedings of the National Conference on Soft Computing Techniques for Engineering Applications, NIT Rourkela, 94-102.
+                td 2006
+              tr
+                td 13
+                td
+                  div
+                    | Mandal, D., Pal, S. K., Saha, P., “Modelling of electric discharge machining using artificial neural network”, Proceedings of the National Conference on Soft Computing Techniques for Engineering Applications, NIT Rourkela, 153-158.
+                td 2006
+              tr
+                td 14
+                td
+                  div
+                    | Pal, S., Pal, S. K., Samantaray, A. K., “A review on gas metal arc welding process modelling and control using soft computing”, Proceedings of the National Conference on Soft Computing Techniques for Engineering Applications, NIT Rourkela, 145-152.
+                td 2006
+              tr
+                td 15
+                td
+                  div
+                    | Patra, K., Pal, S. K., Bhattacharyya, K., “Application of a soft computing technique in drilling”, Proceedings of the National Conference on Soft Computing Techniques for Engineering Applications, NIT Rourkela, 137-144.
+                td 2006
+              tr
+                td 16
+                td
+                  div
+                    | Saha, P., Pal, S. K., Saha, P., “A survey of soft computing methods used in wire-edm”, Proceedings of the 12th National Conference on Machines and Mechanisms, IIT Guwahati, 243-248.
+                td 2005
+              tr
+                td 17
+                td
+                  div
+                    | Patra, K., Pal, S. K., “Soft computing techniques applied to tool condition monitoring in drilling-a review”, Proceedings of the 12th National Conference on Machines and Mechanisms, IIT Guwahati, 189-194.
+                td 2005
+              tr
+                td 18
+                td
+                  div
+                    | Mandal, M., Pal, S. K., “Bond graph modelling of temperature distribution within a slab in reheat furnace”, Proceedings of the National Conference on Advance Manufacturing and Robotics, Durgapur, India, 427-434.
+                td 2004
+              tr
+                td 19
+                td
+                  div
+                    | Pal, S. K., Muramalla, B. S., “Finite element application in metal cutting”, Lecture Notes on Application of Finite Element Method in Manufacturing (QIP-Short-Term Course), IIT Guwahati, 43-56.
+                td 2004
+        h3.text-center International
+        .data
+          table.table.table-hover
+            thead.thead-dark
+              tr
+                th(scope='col') #
+                th(scope='col') Title
+                th(scope='col') Year
+            tbody
+              tr
+                td 1
+                td
+                  div
+                    | Mypati, O., Pal, S. K., Srirangam, P. “A study on electrical conductivity of micro friction stir-welded dissimilar sheets for hybrid electric vehicles (HEVs)”,  The Minerals, Metals & Materials Series (eds) TMS 148th Annual Meeting & Exhibition Supplemental Proceedings. The Minerals, Metals & Materials Series. Springer.
+                td 2019
+              tr
+                td 2
+                td
+                  div
+                    | Sahu S., Thorat O., Mahto R.P., Pal S.K., Srirangam P. (2019) “A review and case study on mechanical properties and microstructure evolution in magnesium–steel friction stir welding”. Joshi V., Jordon J., Orlov D., Neelameggham N. (eds), Magnesium Technology 2019, The Minerals, Metals & Materials Series. Springer
+                td 2019
+              tr
+                td 3
+                td
+                  div
+                    | Sharma, V. M., Racherla, V., Pal, S. K., “Fabrication of copper foam plate using friction sintering”, ASME 2019 14th International Manufacturing Science and Engineering Conference, June 10-14, 2019, Erie, PA, USA.
+                td 2019
+              tr
+                td 4
+                td
+                  div
+                    | Mahto, RP, Pal, S. K., “A Nano-Indentation study on Intermetallic compound in Friction Stir Welding of AA6061-T6 and AISI304”, 40th International MATADOR Conference on Advanced Manufacturing, Hangzhou, China
+                td 2019
+              tr
+                td 5
+                td
+                  div
+                    | Sharma, V. M., Racherla, V., Pal, S. K., “Fabrication of large copper foam plates using friction sintering: Effect of tool traverse speed”, 40th International MATADOR Conference on Advanced Manufacturing, Hangzhou, China, (Accepted for publication).
+                td 2019
+              tr
+                td 6
+                td
+                  div
+                    | Iqbal, Md P, Vishwakarma, Ranjan K., Pal, S. K., Mandal, P., "Friction stir welding of aluminum pipes: a study on the variation of force, torque, power, and temperature" 40th International MATADOR Conference on Advanced Manufacturing, Hangzhou, China, (Accepted for publication).
+                td 2019
+              tr
+                td 7
+                td
+                  div
+                    | Mypati, O., Sadhu, A., Sahu, S., Mishra, D., Pal, S. K., “Formation of kamacite (Fe, Ni) to increase the mechanical strength of friction stir lap welding of aluminium to steel aided with coating”, 7th Asia Steel International Conference, Bhubaneswar, Odisha.
+                td 2018
+              tr
+                td 8
+                td
+                  div
+                    | Sahu, S., Mypati, O., Pal, S. K., Singh, S. B., “Effect of tool geometry on weld strength and hardness in friction stir lap welding of dissimilar materials”, 7th Asia Steel International Conference, Bhubaneswar, Odisha.
+                td 2018
+              tr
+                td 9
+                td
+                  div
+                    | Mahto, R. P., Gaikwad, J., Kumar, R., Pal, S. K.; “Friction stir lap welding of AA6061-T6 and AISI304: Mechanical and metallurgical properties of stir zone”, 7th Asia Steel International Conference, Bhubaneswar, Odisha.
+                td 2018
+              tr
+                td 10
+                td
+                  div
+                    | Rout, M., Singh, S. B., Pal, S. K., “Study on static recrystallisation behaviour of 304ln stainless steel by two-stage compression test”, 7th Asia Steel International Conference, Bhubaneswar, Odisha.
+                td 2018
+              tr
+                td 11
+                td
+                  div
+                    | Sengupta I., Talukdar, M., Pal, S. K., Chakraborty S., “Modified synthesis and reduction of graphene oxide by thermal treatment”, MRS Spring Meeting and Exhibit 2018, Phoenix, Arizona, USA.
+                td 2018
+              tr
+                td 12
+                td
+                  div
+                    | Talukdar, M., Sengupta I., Pal, S. K., Chakraborty S., “Characterization of thermo physical properties of graphene oxide and reduced graphene oxide nanofluids”, MRS Spring Meeting and Exhibit 2018, Phoenix, Arizona, USA.
+                td 2018
+              tr
+                td 13
+                td
+                  | Mishra, D., Basu Roy, R., Dutta, S., Pal S. K., Chakravarty D., “Concept of industry 4.0 in friction stir welding”, Industry 4.0 summit.
+                td 2018
+              tr
+                td 14
+                td
+                  div
+                    | Mahto, R. P., Pal, S. K., “Friction stir lap welding of thin AA6061-T6 and AISI304 sheets at different values of pin penetrations”, ASME 2018 13th International Manufacturing Science and Engineering Conference.
+                td 2018
+              tr
+                td 15
+                td
+                  div
+                    | Sharma, V. M., Maity, D., Racherla, V., Pal, S. K., “Friction sintering of copper powder using a new rapid, cost effective and energy efficient process”, ASME 2018 13th International Manufacturing Science and Engineering Conference.
+                td 2018
+              tr
+                td 16
+                td
+                  div
+                    | Sahu, S., Mypati, O., Nayak, S. S., Sarkar, P.,  Pal, S. K. Singh, S. B., “Friction stir welding for joining of dissimilar materials”, 7th International and 28th All India Manufacturing Technology, Design and Research Conference, Anna University, Chennai.
+                td 2018
+              tr
+                td 17
+                td
+                  div
+                    | Mahto, RP, Kinjawadekar, M., Gupta, C., Pal, S. K., “Effect of pin diameter in underwater friction stir lap welding of dissimilar materials: AA6061-T6 & AISI 304”, 7th International and 28th All India Manufacturing Technology, Design and Research Conference, Anna University, Chennai.
+                td 2018
+              tr
+                td 18
+                td
+                  div
+                    | Sarkar, I., Pal, S. K., Chakraborty S. “Synthesis of titanium dioxide nanofluid and application in jet impingement cooling in steel industries”, ACS 254th National Meeting and Exposition.
+                td 2017
+              tr
+                td 19
+                td
+                  div
+                    | Sahu, S. K., Panda, M., Mahto, R. P., Pal, S. K., Pal, K., Das, P., “Experimental investigation to join Al 6063 alloy to polypropylene using friction stir welding”, Proceedings of the 10th International Conference on Precision, Meso, Micro and Nano Engineering (COPEN 10), 727-731.
+                td 2017
+              tr
+                td 20
+                td
+                  div
+                    | Kumari, K., Mishra, D., Pal, S. K., “Effect of process parameters on the evolution of residual stress in friction stir welding with counter-rotating twin tool”, International Conference on Advanced Materials and Processing Technologies (AMPT-2017), VIT Chennai.
+                td 2017
+              tr
+                td 21
+                td
+                  div
+                    | Jain, R., Pal, S. K., Singh, S. B., “Simulation of material flow in friction stir welding”, Proceedings of the International Conference on Advances in Materials and Manufacturing, (ICAMM), Hyderabad, 51-56.
+                td 2016
+              tr
+                td 22
+                td
+                  div
+                    | Rout, M., Pal, S. K., Singh, S. B., Biswas, S. “Evolution of microstructure and texture in 304 austenitic stainless steel by two different modes of hot rolling”, Proceedings of the International Conference on Advances in Materials and Manufacturing, (ICAMM), Hyderabad, 411- 416.
+                td 2016
+              tr
+                td 23
+                td
+                  div
+                    | Jain, R., Pal, S. K., Singh, S. B., “A coupled thermo-mechanical model to predict forces, temperature and material flow in friction stir welding”, Proceedings of the 6th International and 27th All India Manufacturing Technology, Design and Research Conference (AIMTDR), CoE, Pune, 1892-1895.
+                td 2016
+              tr
+                td 24
+                td
+                  div
+                    | Rout, M., Ranjan, R., Pal, S. K., Singh, S. B., “Study on static recrystallisation behaviour of 304LN stainless steel by two-stage compression test”, Proceedings of the 6th International and 27th All India Manufacturing Technology, Design and Research Conference (AIMTDR), CoE, Pune, 1007- 1011.
+                td 2016
+              tr
+                td 25
+                td
+                  div
+                    | Kumari, K., Mahto, R. P., Pal, S. K., Singh, S. B., “Comparative study on effect of counter rotating twin tool and single tool on temperature rise during friction stir welding”, Proceedings of the 6th International and 27th All India Manufacturing Technology, Design and Research Conference (AIMTDR), CoE, Pune, 679-682.
+                td 2016
+              tr
+                td 26
+                td
+                  div
+                    | Joshi, H. S., Pal, S. K., Chakraborty, G., “Study on the delamination of GFRP composites in drilling-A finite element model”, Proceedings of the 6th International and 27th All India Manufacturing Technology, Design and Research Conference (AIMTDR), CoE, Pune, 1879-1883.
+                td 2016
+              tr
+                td 27
+                td
+                  div
+                    | Sahu, S. K., Mishra, D., Mahto, R. P., Pal, S. K., Pal, K., “Friction stir welding of HDPE sheets-A study on the effect of rotational speed”, Proceedings of the 6th International and 27th All India Manufacturing Technology, Design and Research Conference (AIMTDR), CoE, Pune, 1065-1068.
+                td 2016
+              tr
+                td 28
+                td
+                  div
+                    | Sarkar, I., Pal, S. K., Chakraborty S., “Heat transfer enhancement from a hot steel plate using Triton X-100 Surfactant Additive in water jet”, AICHE Annual Meeting.
+                td 2016
+              tr
+                td 29
+                td
+                  | Chakraborty S, Pal, S. K., Chakraborty S., “Spray cooling of hot steel plate using water based TiO2 nanofluid”, AICHE Annual Meeting, 2016.
+                td 2016
+              tr
+                td 30
+                td
+                  div
+                    | Rout, M., Krishna, K. S., Pal, S. K., Singh, S. B., “Experimental study of plastic anisotropy in hot cross rolling”, 2nd International Conference on Rolling & Finishing Technology of Steel, SAIL, RDCIS, Ranchi, India, Iron & Steel Review, 59(4), 155-158.
+                td 2015
+              tr
+                td 31
+                td
+                  div
+                    | Kesharwani, R., Panda, S. K., Pal, S. K., “Multi objective optimization of friction stir welding parameters for joining of two dissimilar thin aluminum sheets” 3rd International Conference on Material Processing and Characterization (ICMPC), GRIET Hyderabad.
+                td 2014
+              tr
+                td 32
+                td
+                  div
+                    | Jain, R., Pal, S. K., Singh, S. B., “Finite element simulation of temperature distribution and stress variation in aisi 1040 steel by friction stir welding process”, 5th International and 26th All India Manufacturing Technology, Design and Research Conference (AIMTDR), IIT Guwahati.
+                td 2014
+              tr
+                td 33
+                td
+                  div
+                    | Sardar, S., Mandal, A., Pal, S. K., Singh, S. B., “Accumulative roll bonding of aa6005 and aa1060 metal strip: Study on microstructure, mechanical properties and minimum bonding criteria”, 5th International and 26th All India Manufacturing Technology, Design and Research Conference (AIMTDR), IIT Guwahati.
+                td 2014
+              tr
+                td 34
+                td
+                  div
+                    | Kumari, K., Pal, S. K., “Study on the novel twin-tool system in friction stir welding process”, 5th International and 26th All India Manufacturing Technology, Design and Research Conference (AIMTDR), IIT Guwahati.
+                td 2014
+              tr
+                td 35
+                td
+                  div
+                    | Rout, M., Pal S. K., Singh, S. B., “Numerical simulation of temperature field of aisi 316L stainless steel during cross rolling”, Proceedings of the International Conference on Innovation in Design, Manufacturing and Concurrent Engineering, (IDMC), NIT Rourkela, 81.
+                td 2014
+              tr
+                td 36
+                td
+                  div
+                    | Rout, M., Pal S. K., Singh, S. B., “Finite element analysis of cross rolling on aisi 304 stainless steel: prediction of stress and strain fields”, Proceedings of the 5th International and 26th All India Manufacturing Technology, Design and Research Conference, (AIMTDR), IIT Guwahati, 487-1.
+                td 2014
+              tr
+                td 37
+                td
+                  div
+                    | Kumari K., Pal, S. K., “Friction stir processing of al alloy by using twin tool”, International Colloquim on Materials, Manufacturing, and Metrology, (ICMMM) IIT Madras.
+                td 2014
+              tr
+                td 38
+                td
+                  div
+                    | Kumari K., Pal, S. K., Singh S.B.,”Novel concept of twin-tool in friction stir welding: A study on hardness of non-heat treated and heat treated commercial pure al alloys”, International Conference on Friction Based Processes, (ICFP), IISc Bangalore.
+                td 2014
+              tr
+                td 39
+                td
+                  div
+                    | Jain, R., Pal, S. K., Singh, S. B., “Finite element simulation of effect of process parameters on forces and spindle torque in friction stir welding”, International Conference on Friction Based Processes, (ICFP), IISc, Bangalore.
+                td 2014
+              tr
+                td 40
+                td
+                  div
+                    | Chatterjee, S., Chatterjee, R., Pal, S., Pal, K., Pal, S. K., “Accurate detection of weld defects using chirplet transform”, 4th International Conference on Computer and Automation Engineering (ICCAE), Mumbai, India.
+                td 2012
+              tr
+                td 41
+                td
+                  div
+                    | Joshi H. S., Pal S. K., Chakraborty, G., Mandal P. S., “Estimation of thrust force using finite element analysis during drilling of GFRP composites”, International Conference on Global Technology Initiatives, Mumbai, India
+                td 2012
+              tr
+                td 42
+                td
+                  div
+                    | Pal, K., Pal, S. K., “Multi-sensor based prediction of weld quality characteristics in pulsed GMAW using artificial neural network”, 4th International and 25th All India Manufacturing Technology, Design and Research Conference (AIMTDR), Jadavpur University.
+                td 2012
+              tr
+                td 43
+                td
+                  div
+                    | Mohapatra, S. S., Palleti, V. R., Chakraborty, S., Pal, S. K.,   “Experimental study of ultra-fast cooling of a hot steel plate by air-assisted spray at high mass flux” International Conference on Advanced in Materials and Materials Processing (ICAMMP), IIT Kharagpur, India, 32.
+                td 2011
+              tr
+                td 44
+                td
+                  div
+                    | Datta, A., Dutta, S., Pal, S. K., Sen, R., Mukhopadhyay, S., “Texture analysis of turned surface images using grey level co-occurrence technique”, International Conference of Future Materials Engineering and Industrial Applications (ICFMEIA), Bali, Indonesia.
+                td 2011
+              tr
+                td 45
+                td
+                  div
+                    | Saha, P., Pal, S.K., Saha, P., “Parametric optimization in wedm of wc-co composite by neuro-genetic technique”, Proc. of the International Conference on Mechanical Engineering, Imperial College, London, 2204-2209.
+                td 2011
+              tr
+                td 46
+                td
+                  div
+                    | Ravi Shankar, S. N., Pal, S. K., Samantaray A. K., “Drilling of glass fibre reinforced plastic (GFRP) composite: experimental investigation on effects of process parameters”, International Conference on Advances in Mechanical Engineering (ICMAE), S.V. National Institute of Technology, Surat.
+                td 2010
+              tr
+                td 47
+                td
+                  div
+                    | Ghosh, M., Das, D., Mandal, S., Chakraborty, C., Pal, M., Maity, A., Pal, S. K., Ray, A. K., “Statistical pattern analysis of white blood cell nuclei morphometry”, IEEE Students’ Technology Symposium, IIT Kharagpur.
+                td 2010
+              tr
+                td 48
+                td
+                  div
+                    | Patra, K., Pal, S. K., Bhattacharyya, K., “Strategies for intelligent tool wear prediction in a machining process”, 23rd International congress on Condition Monitoring and Diagnostic Engineering Management (COMADEM), 623-626, Nara, Japan.
+                td 2010
+              tr
+                td 49
+                td
+                  div
+                    | Pal, K., Pal, S. K., “Modeling and control of a gas metal arc welding process using soft computing tools and sensor signals: A review”, International Conference Emerging Research and Advances in Mechanical Engineering (ERA), Chennai.
+                td 2009
+              tr
+                td 50
+                td
+                  div
+                    | Priyadarshini, A., Pal, S. K., Samantaray, A. K., “Estimation of heat generation and cutting tool temperature in orthogonal machining: A review”, International Conference Emerging Research and Advances in Mechanical Engineering (ERA), Chennai.
+                td 2009
+              tr
+                td 51
+                td
+                  div
+                    | Ravishankar, S. N., Pal, S. K., Samantaray A. K., “Drilling of glass fibre reinforced plastics: A review”, International Conference Emerging Research and Advances in Mechanical Engineering (ERA), Chennai.
+                td 2009
+              tr
+                td 52
+                td
+                  div
+                    | Priyadarshini, A., Pal, S. K., Samantaray, A. K., “Finite element study of serrated chip formation”, International Conference on Advances in Mechanical Engineering (ICMAE), S.V. National Institute of Technology, Surat.
+                td 2009
+              tr
+                td 53
+                td
+                  div
+                    | Pal, K., Pal, S. K., “Characterization of weld quality and process stability in pulsed MIG welding using sensor signals”, International Conference on Advances in Mechanical Engineering (ICMAE), S.V. National Institute of Technology, Surat, 1019-1023.
+                td 2009
+              tr
+                td 54
+                td
+                  div
+                    | Sannapureddy, H., Priyadarshini, A., Pal, S. K., “Finite element modeling of turning operation: study on the effect of cutting velocity and feed on cutting and thrust force”, International Conference on Advances in Mechanical and Building Sciences (ICAMB), V.I.T University, Vellore, Tamil Nadu.
+                td 2009
+              tr
+                td 55
+                td
+                  div
+                    | Garg, S., Chakraborty D., Deb, S., Pal, S. K., “A neuro-memetic model for the prediction of drill flank wear”, International Conference on Advances in Manufacturing and Technology Management (ICAMTM), Mumbai, India, 9-15.
+                td 2007
+              tr
+                td 56
+                td
+                  div
+                    | Ranjan, R., Abhishek K., Patra, K., Pal, S. K., Samantaray, A. K., “Prediction of drill flank wear using a neuro-GA model” Proceedings of the Global Conference on Production and Industrial Engineering, (CPIE), NIT Jalandhar.
+                td 2007
+              tr
+                td 57
+                td
+                  div
+                    | Sarkar, A., Pal, S., Pal, S. K., Samantaray, A. K., “Prediction of welding joint strength and bead geometry in pulsed gas metal arc welding using artificial neural network” Proceedings of the Global Conference on Production and Industrial Engineering, (CPIE), NIT Jalandhar.
+                td 2007
+              tr
+                td 58
+                td
+                  div
+                    | Saha, P., Singha, A., Pal, S. K., Saha, P., “A neural network approach for modeling the wire electro discharge machining of tungsten carbide cobalt composite”, Proceedings of the Global Conference on Production and Industrial Engineering, (CPIE), NIT Jalandhar, 38.
+                td 2007
+              tr
+                td 59
+                td
+                  div
+                    | Pal, S., Pal, S. K., Samantaray, A., K., “Determination of optimal pulse metal inert gas welding parameters using neuro-GA technique”, Proceedings of the 4th International Conference of Theoretical, Applied Computational and Experimental Mechanics (ICTACEM), IIT Kharagpur, 301.
+                td 2007
+              tr
+                td 60
+                td
+                  div
+                    | Patra, K., Pal, S. K., Bhattacharyya, K., “Artificial neural network based tool condition monitoring in drilling using vibration signal analysis”, Proceedings of the 4th International Conference of Theoretical, Applied Computational and Experimental Mechanics (ICTACEM), IIT Kharagpur, 476.
+                td 2007
+              tr
+                td 61
+                td
+                  div
+                    | Saha, P., Pal, S. K., Saha, P., “Application of fully supervised radial basis function network for prediction of machining performance in wire-EDM”, International Conference of Precision, Meso, Micro and Nano Engineering (COPEN), 81-86.
+                td 2007
+              tr
+                td 62
+                td
+                  div
+                    | Patra, K., Pal, S. K., Bhattacharyya, K., “Drill wear monitoring using current signature wavelet packet transform and artificial neural network”, IEEE International Conference on Industrial Technology, IIT Bombay, 1344-1348.
+                td 2006
+              tr
+                td 63
+                td
+                  div
+                    | Pal, S. K., Mukherjee, A., Karmakar, R., “A novel approach to metallurgical process modelling”, International Conference on Advances in Materials and Materials Processing (ICAMMP), I.I.T., Kharagpur, India, 591-598
+                td 2002
+              tr
+                td 64
+                td
+                  div
+                    | Pal, S. K., Talamantes-Silva, J., Linkens, D. A., Howard, I. C., “Bond graph and finite element analysis of temperature distribution in hot rolling processes”, International Conference on Thermomechanical Processing : Mechanics, Microstructure, Control, Sheffield, U.K.
+                td 2002
+              tr
+                td 65
+                td
+                  div
+                    | Pal, S. K., Linkens, D. A., “An integrated bond graph model for multipass rolling processes”, IEEE International Conference on Systems, Man and Cybernatics, Tunisia, 50.
+                td 2002
+              tr
+                td 66
+                td
+                  div
+                    | Pal, S.  K., Linkens, D.  A., “Bond graph modelling of thermal phenomena in hot rolling”, International Conference of Bond Graph Modelling (ICBGM), Society for Computer Simulation,  Arizona, USA, 33(1), 253-256
+                td 2001
+              tr
+                td 67
+                td
+                  div
+                    | Pal, S. K., Linkens, D. A., “Effect of roll gap on temperature distribution in slab during steel hot rolling: A bond graph approach”, IFAC Symposium on Automation in Mining, Mineral and Metal Processing, Tokyo, Japan, 59-62.
+                td 2001
+              tr
+                td 68
+                td
+                  div
+                    | Pal, S. K., Linkens, D. A., “Effect of roll speed on temperature in hot metal rolling: A bond graph approach”, European Simulation Symposium, Marseilles, France, 818-821.
+                td 2001
+              tr
+                td 69
+                td
+                  div
+                    | Pal, S. K., Mukherjee, A., Karmakar, R., “Effect of surface motion on metal cooling and microstructural evolution: A bondgraphic view”, International Conference of Bond Graph Modelling (ICBGM), Society for Computer Simulation, USA, 31(1), 202-207.
+                td 1999    
